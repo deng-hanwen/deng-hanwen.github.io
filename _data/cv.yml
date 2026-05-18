@@ -1,189 +1,230 @@
 cv:
-  name: Albert Einstein
-  label: Scientist
-  email: einstein@example.com
-  location: Princeton, NJ
+  name: Hanwen Deng
+  label: Postgraduate Associate, Yale University
+  email: hanwen.deng@yale.edu
+  location: New Haven, CT
   image: ""
-  summary: A German-born theoretical physicist, widely ranked among the greatest and most influential scientists of all time
+  summary: >
+    Postgraduate researcher with over 4 years of hands-on experience across Yale University and
+    University College London, specialising in computational psychiatry, affective neuroscience,
+    and neuroimaging. Contributed to 2 publications, accepted for an oral presentation and 2 poster
+    presentations at conferences. Skilled in R and MATLAB; experienced in computational modelling,
+    ecological momentary assessment (EMA), and fMRI methods applied to mood disorders and addiction.
+    Seeking to advance in a PhD programme in computational psychiatry or clinical neuroscience.
 
   social_networks:
-    - network: X
-      username: AlbertEinstein
     - network: GitHub
-      username: example
+      username: deng-hanwen
     - network: LinkedIn
-      username: example
-
-  address:
-    street: 2712 Broadway St
-    city: San Francisco
-    region: California
-    postalCode: CA 94115
-    countryCode: US
+      username: hanwen-deng
 
   sections:
     Education:
-      - institution: University of Zurich
-        location: Zurich, Switzerland
-        url: https://www.uzh.ch/
-        area: Physics
-        studyType: PhD
-        start_date: 1900
-        end_date: 1905
-        score: ""
-        courses: "Theory of Relativity"
+      - institution: University College London & Yale University
+        location: London, UK
+        area: Developmental Neuroscience and Psychopathology
+        studyType: MRes
+        start_date: 2023-09
+        end_date: 2025-09
         highlights:
-          - Description 1.
-          - Description 2.
+          - "Distinction"
 
-      - institution: Eidgenössische Technische Hochschule
-        location: Zurich, Switzerland
-        area: Physics
-        studyType: Federal teaching diploma
-        start_date: 1896
-        end_date: 1900
+      - institution: University of Glasgow
+        location: Glasgow, UK
+        area: Psychological Studies Conversion
+        studyType: MSc
+        start_date: 2020-09
+        end_date: 2021-09
         highlights:
-          - Description 1.
-          - Description 2.
+          - "Distinction"
 
-    Experience:
-      - company: Institute for Advanced Study, Princeton University
-        position: Professor of Theoretical Physics
-        location: Princeton University, NJ
-        start_date: 1933
-        end_date: 1955
-        summary: Teaching at Palmer Physical Laboratory (now 302 Frist Campus Center). While not a professor at Princeton, I associated with the physics professors and continued to give lectures on campus.
+      - institution: Southern Medical University
+        location: Guangzhou, China
+        area: Biomedical Engineering
+        studyType: BSc
+        start_date: 2016-09
+        end_date: 2020-07
         highlights:
-          - Relativity
-          - Description 2.
+          - "GPA: 3.1/4.0"
 
-      - company: California Institute of Technology
-        position: Visiting Professor
-        location: Pasadena, California, US
-        start_date: 1933
-        end_date: 1933
+    Research Experience:
+      - company: Yale University, Dr Sarah Yip
+        position: Postgraduate Associate
+        location: New Haven, CT
+        start_date: 2026-01
+        end_date: present
+        summary: "Neurobiological Markers of Opioid Use Disorder"
         highlights:
-          - Description 1.
-          - Description 2.
+          - "Analysed whole-brain functional connectivity in OUD (n=53) vs healthy controls (n=38) across MID reward and Stroop tasks using Network-Based Statistics (NBS, 268-node Shen atlas); applied repeated-measures mixed-effects network analysis (NBR) and conjunction analysis."
+          - "Identified large-scale FC networks robustly differentiating OUD from healthy controls; demonstrated group differences persist in resting-state FC, supporting a stable trait interpretation."
+          - "Found diagnostic FC networks do not predict treatment response, suggesting dissociation between neural markers of OUD pathology and markers of recovery."
 
-      - company: Kaiser Wilhelm Institute for Physics
-        position: Director
-        location: Berlin, Germany
-        start_date: 1917
-        end_date: 1933
-
-      - company: Karl-Ferdinand University
-        position: Professor of Theoretical Physics
-        location: Prague, Czechoslovakia
-        start_date: 1911
-        end_date: 1917
-
-      - company: University of Zurich
-        position: Associate Professor of Theoretical Physics
-        location: Zurich, Switzerland
-        start_date: 1909
-        end_date: 1911
-
-    Volunteer:
-      - company: People's Climate March
-        position: Lead Organizer
-        location: Zurich, Switzerland
-        start_date: 2014-04-01
-        end_date: 2015-07-01
-        summary: Lead organizer for the New York City branch of the People's Climate March, the largest climate march in history.
+      - company: Yale University & Rutgers University, Dr Sarah Yip & Dr Anna Konova
+        position: Postgraduate Associate
+        location: New Haven, CT
+        start_date: 2025-12
+        end_date: present
+        summary: "Whole-Brain Resting-State fMRI Prediction of Ambiguity Tolerance"
         highlights:
-          - "Awarded 'Climate Hero' award by Greenpeace for my efforts organizing the march."
-          - "Men of the year 2014 by Time magazine"
+          - "Applied connectome-based predictive modelling (CPM) to resting-state fMRI data (n=93) to predict individual differences in ambiguity tolerance derived from an economic decision-making task."
+          - "Findings suggest state-dependent processes underlying ambiguity tolerance may require task-based rather than resting-state connectivity paradigms."
 
-    Awards:
-      - title: Nobel Prize in Physics
+      - company: UCL / Yale University
+        position: MRes Dissertation (Distinction)
+        location: London, UK
+        start_date: 2024-09
+        end_date: 2025-06
+        summary: "Computational Markers and Clinical Vulnerability in Early Opioid Use Disorder Treatment"
+        highlights:
+          - "Fitted a utility-based computational model to a Risk and Ambiguity Decision-Making Task (n=15, 8-week dense-sampling design) to extract ambiguity tolerance and risk tolerance parameters."
+          - "Identified systematic non-random missingness (34.5% excluded); studied as a clinical signal and applied propensity score weighting to correct for exclusion bias."
+          - "Mediation analysis identified distinct pathways from clinical vulnerability to dropout: cognitive ability and positive affect were protective; craving, sleep disturbance, and distress intolerance operated through active substance use."
+
+      - company: UCL, Dr Liam Mason
+        position: Voluntary Research Assistant
+        location: London, UK
+        start_date: 2024-05
+        end_date: present
+        summary: "Mood Velocity and Dynamics in Bipolar Disorder"
+        highlights:
+          - "Analysed longitudinal EMA data capturing mood fluctuations in bipolar disorder and healthy control cohorts across 8-week assessment periods."
+          - "Applied Damped Linear Oscillator (DLO) modelling and Generalised Local Linear Approximation (GLLA) to characterise mood instability parameters."
+          - "Co-authoring manuscript on mood velocity metrics as prospective indices of manic symptom intensification."
+
+      - company: UCL, Dr Veronica Ranieri & Dr Rob Saunders
+        position: Voluntary Research Assistant
+        location: London, UK
+        start_date: 2024-08
+        end_date: 2025-03
+        summary: "Cross-Country Analysis of Perceived Coercion During COVID-19"
+        highlights:
+          - "Led multilevel factor modelling and meta-analysis examining perceived coercion across 11 countries."
+          - "Identified significant cross-country variation in coercion scores consistently associated with elevated depression, anxiety, and stress symptoms."
+
+    Professional Experience:
+      - company: Yale University, Department of Psychiatry — IMPACT-MH Program
+        position: Postgraduate Associate (Dr Chris Pittenger & Dr Sarah Yip)
+        location: New Haven, CT
+        start_date: 2025-07
+        end_date: present
+        highlights:
+          - "Conduct structured clinical interviews using the DIAMOND protocol (DSM-5-based) across schizophrenia-spectrum, mood, and personality disorder populations."
+
+      - company: St Andrew's Healthcare — Neuropsychiatry Division
+        position: Assistant Psychologist
+        location: Northampton, UK
+        start_date: 2022-11
+        end_date: 2023-05
+        highlights:
+          - "Provided specialist psychological support for patients with traumatic brain injuries and complex comorbidities in a secure neuropsychiatric setting."
+          - "Administered and interpreted neuropsychological assessments (ACE-III, BATCH, WASI-II, RBANS) to inform individualised treatment planning."
+          - "Authored clinical formulations and CPA reports for MDT care planning; delivered psychoeducation to healthcare professionals."
+
+      - company: St Andrew's Healthcare — Low Secure Rehabilitation
+        position: Dialectical Behaviour Therapy (DBT) Assistant
+        location: Northampton, UK
+        start_date: 2021-12
+        end_date: 2022-11
+        highlights:
+          - "Led daily mindfulness and goal-setting sessions; led weekly homework groups and DBT skills training workshops."
+          - "Performed post-crisis debriefing sessions using Behavioural Chain Analysis."
+
+    Conferences & Presentations:
+      - title: "When Data Quality Speaks: Computational Markers and Clinical Vulnerability in Early Opioid Use Disorder Treatment"
         authors:
-          - "Royal Swedish Academy of Sciences"
-        date: 1921-11-01
-        awarder: Royal Swedish Academy of Sciences
-        url: https://www.nobelprize.org/prizes/physics/1921/einstein/biographical/
-        summary: The Nobel Prizes are five separate prizes that, according to Alfred Nobel's will of 1895, are awarded to 'those who, during the preceding year, have conferred the greatest benefit to humankind.'
+          - Hanwen Deng
+        date: 2026
+        awarder: APA Division 12 (Society of Clinical Psychology) Annual Conference
+        summary: "Accepted for Rapid Fire Oral Presentation; unable to attend due to travel constraints."
 
-      - title: Max Planck Medal
+      - title: "Whole-Brain Resting-State Functional Connectivity Prediction of Ambiguity Tolerance"
         authors:
-          - "German Physical Society"
-        date: 2029
-        awarder: German Physical Society
-        summary: Awarded for outstanding scientific achievement
+          - Hanwen Deng
+        date: 2026
+        awarder: Computational Psychiatry Conference
+        summary: "Poster Presentation (accepted; in preparation)"
+
+      - title: "Discerning Individual Differences in Symptom Trajectories"
+        authors:
+          - Hanwen Deng
+        date: 2025
+        awarder: YPGA Symposium — IMPACT-MH
+        summary: "Poster Presentation"
 
     Publications:
-      - title: Zur Elektrodynamik bewegter Körper
+      - title: "Negative affect damping as a prospective index of manic symptom intensification in bipolar disorder: a longitudinal ecological momentary assessment study"
         authors:
-          - Albert Einstein
-        publisher: Annalen der Physik
-        releaseDate: 1905-06-30
-        url: https://en.wikisource.org/wiki/Translation:On_the_Electrodynamics_of_Moving_Bodies
-        summary: It concerned an interpretation of the Michelson–Morley experiment and the properties of light and time. Special relativity incorporates the principle that the speed of light is the same for all inertial observers regardless of the state of motion of the source.
+          - Hanwen Deng
+          - Liam Mason
+        publisher: In preparation
+        releaseDate: ""
 
-      - title: Über einen die Erzeugung und Verwandlung des Lichtes betreffenden heuristischen Gesichtspunkt
+      - title: "Auto insurance renewal forecast and scheme optimization based on customers' characteristics"
         authors:
-          - Albert Einstein
-        publisher: Annalen der Physik
-        releaseDate: 1905-03-18
-        url: https://de.wikisource.org/wiki/Über_einen_die_Erzeugung_und_Verwandlung_des_Lichtes_betreffenden_heuristischen_Gesichtspunkt
-        summary: In the second paper, he applied the quantum theory to light to explain the photoelectric effect. In particular, he used the idea of light quanta (photons) to explain experimental results, but stressed the importance of the experimental results. The importance of his work on the photoelectric effect earned him the Nobel Prize in Physics in 1921.
+          - Minmin Liu
+          - Kaibin Wu
+          - Hanwen Deng
+          - Xuchang Huang
+        publisher: Han Journal of Data Mining
+        releaseDate: 2019
+        summary: "9(3), 69–80"
 
-      - title: Die Grundlage der allgemeinen Relativitätstheorie
+      - title: "CT image-based 3D reconstruction in laparoscopic D3 radical resection for rectal cancer"
         authors:
-          - Albert Einstein
-        publisher: Annalen der Physik
-        releaseDate: 1916-03-20
-        url: https://de.wikisource.org/wiki/Die_Grundlage_der_allgemeinen_Relativitätstheorie
-        summary: The publication of the theory of general relativity made him internationally famous. He was professor of physics at the universities of Zurich (1909–1911) and Prague (1911–1912), before he returned to ETH Zurich (1912–1914).
+          - J. Chen
+          - Z. Chen
+          - W. Guo
+          - Q. Xiao
+          - Hanwen Deng
+          - et al.
+        publisher: Chinese Journal of Medical Physics
+        releaseDate: 2019
+        summary: "36(7), 778–783"
+
+    Honours & Awards:
+      - title: "National Mathematical Contest in Modeling — Third Prize"
+        date: 2019
+        awarder: National Competition
+        summary: "Competed among 42,992 teams nationwide."
+
+      - title: "12th Certification Cup Mathematical Modeling Network Challenge — Third Prize, First Stage"
+        date: 2019
+        awarder: National Competition
+        summary: "Solved Problem A: investigation and optimisation of car-following models on expressways."
+
+      - title: "National English Competition for College Students (NECCS) — Third Prize, Category C"
+        date: 2019
+        awarder: National Competition
+
+      - title: "Challenge Cup Extracurricular Academic Science and Technology Competition — Third Prize"
+        date: 2018
+        awarder: Southern Medical University
+
+      - title: "National College Student's English Reading Contest — Second Prize, Preliminary Competition"
+        date: 2018
+        awarder: Foreign Language Teaching and Research Press
+
+      - title: "National College Student's Speaking Contest — Third Prize, Preliminary Competition"
+        date: 2017
+        awarder: Foreign Language Teaching and Research Press
+
+      - title: '"Love Our University" Micro Video Shooting Competition — Second Prize'
+        date: 2016
+        awarder: Southern Medical University
 
     Skills:
-      - name: Physics
-        level: Master
-        icon: fa-solid fa-hashtag
-        keywords: "Quantum Mechanics, Quantum Computing, Quantum Information, Quantum Cryptography, Quantum Communication, Quantum Teleportation"
+      - name: Programming & Software
+        keywords: "R, MATLAB, NVivo, PsychoPy, Mimics, SolidWorks, CAD"
+
+      - name: Statistical & Computational Models
+        keywords: "LME, GLMM, Multilevel Logistic Regression, DLO, GLLA, Continuous-Time State-Space Models, RL Models, Expected Utility Models, Prospect Theory Models, Softmax/Luce Choice Models"
+
+      - name: Neuroimaging & Analysis Methods
+        keywords: "CPM, NBS, fMRI connectivity analysis, EMA design & analysis, propensity score weighting, mediation analysis, multilevel factor modelling, permutation testing"
 
     Languages:
-      - name: German
-        summary: "Native speaker"
-
       - name: English
-        summary: "Fluent"
+        summary: "Fluent (TEM4 & TEM8 Pass)"
 
-    Interests:
-      - name: Physics
-        icon: fa-solid fa-tag
-        keywords: "Quantum Mechanics, Quantum Computing, Quantum Information, Quantum Cryptography, Quantum Communication, Quantum Teleportation"
-
-    Certificates:
-      - name: Machine Learning
-        date: 2018-01-01
-        issuer: Stanford University
-        icon: fa-solid fa-location-dot
-
-      - name: Quantum Computing
-        date: 2018-01-01
-        issuer: Stanford University
-        icon: fa-solid fa-tag
-
-      - name: Quantum Information
-        date: 2018-01-01
-        issuer: Stanford University
-        icon: fa-solid fa-envelope
-
-    Projects:
-      - name: Quantum Computing
-        summary: Quantum computing is the use of quantum-mechanical phenomena such as superposition and entanglement to perform computation. Computers that perform quantum computations are known as quantum computers.
-        highlights:
-          - Quantum Teleportation
-          - Quantum Cryptography
-        start_date: 2018-01-01
-        end_date: 2018-01-01
-
-    References:
-      - name: Professor John Doe
-        icon: fa-solid fa-laptop
-        reference: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam condimentum, diam quis convallis euismod, arcu mi ullamcorper lorem, a vestibulum nunc magna at sem. Sed in risus ac felis varius blandit.
-
-      - name: Professor Jane Smith
-        icon: fa-solid fa-thumbtack
-        reference: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam condimentum, diam quis convallis euismod, arcu mi ullamcorper lorem, a vestibulum nunc magna at sem. Sed in risus ac felis varius blandit.
+      - name: Mandarin
+        summary: "Native"
