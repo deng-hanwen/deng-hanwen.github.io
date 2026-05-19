@@ -31,24 +31,42 @@ PA and NA composites were derived via principal component analysis (PCA) applied
 
 ## The Damped Linear Oscillator (DLO) Model
 
-The primary modelling approach treats each person's affect time series as the output of a **damped linear oscillator** — a continuous-time dynamical system widely used in physics and engineering to describe systems that fluctuate around an equilibrium while subject to dampening forces.
+The primary modelling approach treats each person's affect time series as the output of a **damped linear oscillator** — a continuous-time dynamical system that describes oscillatory processes governed by both a restoring force and a dampening force.
 
-The governing equation is:
+The model is specified as a state-space system in continuous time (SSM-CT), with dynamics governed by the following equation (Ollero et al., 2025):
 
-$$\ddot{x} = \eta \cdot \dot{x} + \zeta \cdot x$$
+$$\begin{bmatrix} \dot{x} \\ \ddot{x} \end{bmatrix} = \begin{bmatrix} 0 & 1 \\ \eta & \zeta \end{bmatrix} \begin{bmatrix} x \\ \dot{x} \end{bmatrix} + \begin{bmatrix} 0 \\ q(t) \end{bmatrix}$$
 
-where $$x$$ is the affect state, $$\dot{x}$$ is its first derivative (velocity), and $$\ddot{x}$$ is its second derivative (acceleration). Two parameters fully characterise the system's dynamics:
+where $$x$$ is the momentary affect state, $$\dot{x}$$ is the rate of change in affect (velocity), $$\ddot{x}$$ is the acceleration, and $$q(t)$$ captures random environmental perturbations (dynamic noise). In scalar form, the dynamic equation is:
+
+$$\ddot{x} = \eta x + \zeta \dot{x}$$
+
+Two parameters fully characterise the system's dynamics:
 
 | Parameter | Name | Interpretation |
 |-----------|------|----------------|
-| **η (eta)** | Frequency / lability | Governs momentum in affect change. Less negative η → affect tends to carry its current trajectory further; *greater emotional lability*. |
-| **ζ (zeta)** | Damping / resilience | Governs the restoring force pulling affect back to equilibrium. More negative ζ → stronger return to baseline; *greater affective resilience*. |
+| **η (eta)** | Oscillation frequency / lability | Coefficient of position (x). More negative η → higher oscillation frequency → greater emotional lability (more rapid, pronounced mood fluctuations). |
+| **ζ (zeta)** | Dampening / resilience | Coefficient of velocity (ẋ). More negative ζ → stronger dampening → faster return to equilibrium → greater affective resilience. |
 
-A useful intuition comes from the **ball-in-bowl metaphor** (Ollero et al., 2025, *Psychological Methods*): imagine mood as a ball rolling in a bowl. The curvature of the bowl represents ζ — a steep bowl (more negative) produces rapid, strong recentring. The friction acting on the ball represents η — low friction (less negative) allows the ball to roll further before decelerating. An individual with high emotional lability and poor resilience is akin to a ball in a shallow, frictionless bowl: small perturbations produce large, prolonged excursions.
+<br>
 
-The DLO was fitted as a **continuous-time state-space model** (SSM-CT) using **OpenMx** in R, a specification that accommodates the irregular inter-observation intervals inherent in naturalistic EMA data and yields parameters that are directly comparable across datasets with different sampling rates. Individual solutions were accepted under a **stability criterion** requiring both system eigenvalues to have strictly negative real parts (Re(λ) < 0), ensuring the model represents a genuinely mean-reverting system. Raw estimates were Winsorised at the 5th–95th percentile bounds (derived from stable participants) and transformed via inverse hyperbolic sine (asinh) to reduce skew while preserving sign.
+A useful intuition comes from the **ball-in-bowl metaphor** (Ollero et al., 2025): imagine mood as a ball rolling inside a bowl. The curvature of the bowl corresponds to η — a steeper bowl (more negative η) produces stronger oscillations and a higher oscillation frequency. The surface texture represents ζ — a velvet-lined bowl (more negative ζ) creates greater friction, slowing the ball and returning it to the centre more quickly.
 
-Associations between DLO parameters (η, ζ for both PA and NA) and prospective manic and depressive symptom change (ΔAltman, ΔQIDS) were tested using **stepwise OLS regression** in the BD subsample, with Bonferroni correction applied across outcomes.
+<div style="text-align: center; margin: 2rem 0;">
+  <img src="/assets/img/dlo_fig1_bowl.png" alt="Ball-in-bowl metaphor for DLO model" style="max-width: 80%; border: 1px solid #eee; padding: 8px;">
+  <p style="font-size: 0.85em; color: #666; margin-top: 0.5rem;"><em>Figure 1.</em> Ball-in-bowl metaphor illustrating DLO dynamics: (A) ball at equilibrium; (B) ball displaced from equilibrium. Reproduced from Ollero et al. (2025, <em>Psychological Methods</em>).</p>
+</div>
+
+The effects of varying η and ζ on affect trajectories are illustrated in Figures 2 and 3 below. Individuals with greater lability (η closer to zero) oscillate more slowly, while stronger dampening (more negative ζ) produces faster convergence back to the equilibrium.
+
+<div style="text-align: center; margin: 2rem 0;">
+  <img src="/assets/img/dlo_fig23_trajectories.png" alt="Affect trajectories for different values of eta and zeta" style="max-width: 95%; border: 1px solid #eee; padding: 8px;">
+  <p style="font-size: 0.85em; color: #666; margin-top: 0.5rem;"><em>Figures 2–3.</em> Simulated affect trajectories illustrating the effect of varying η (emotional lability, left) and ζ (resilience, right). Reproduced from Ollero et al. (2025, <em>Psychological Methods</em>).</p>
+</div>
+
+The DLO was fitted as a **continuous-time state-space model** using **OpenMx** in R. This specification accommodates the irregular inter-observation intervals inherent in naturalistic EMA data and yields parameters directly comparable across datasets with different sampling rates. Individual solutions were accepted under a **stability criterion** requiring both system eigenvalues to have strictly negative real parts (Re(λ) < 0). Raw estimates were Winsorised at the 5th–95th percentile bounds (derived from stable participants) and transformed via inverse hyperbolic sine (asinh) to reduce skew while preserving sign.
+
+Associations between DLO parameters and prospective manic and depressive symptom change (ΔAltman, ΔQIDS) were tested using **stepwise OLS regression** in the BD subsample, with Bonferroni correction applied across outcomes.
 
 ---
 
@@ -64,7 +82,7 @@ This dual-method design reflects a deliberate analytical distinction: DLO captur
 
 Results indicate a **dissociation between PA and NA dynamics**, with the two affect streams showing qualitatively distinct relationships to clinical trajectories. Notably, NA dampening (ζ) emerged as a prospective predictor specifically associated with manic — not depressive — symptom change in BD, suggesting that the resilience of the negative affect system may carry information about vulnerability to mania that is not captured by positive affect dynamics or static symptom ratings alone.
 
-At the observation level, BD participants showed greater state-dependent NA reactivity than HC, with the direction of current mood movement modulating the strength of the restoring force. Circadian organisation of affect velocity was also more pronounced in BD than HC, with group differences in morning affect dynamics identified for both PA and NA — a pattern consistent with disrupted diurnal emotion regulation in this population.
+At the observation level, BD participants showed greater state-dependent NA reactivity than HC, with the direction of current mood movement modulating the strength of the restoring force. Circadian organisation of affect velocity was also more pronounced in BD than HC, with group differences in morning affect dynamics identified for both PA and NA — consistent with disrupted diurnal emotion regulation in this population.
 
 Together, DLO and LME analyses converge on a picture in which BD is characterised by systematically altered affect system dynamics, and in which individual differences in these dynamics carry prospective clinical signal.
 
@@ -80,4 +98,4 @@ All analysis code is available at **[github.com/deng-hanwen/EMA-mood-dynamics](h
 
 ## References
 
-Ollero, R., Kalokerinos, E. K., & Kuppens, P. (2025). Characterizing affect dynamics with a damped linear oscillator model: Theoretical considerations and recommendations for individual-level applications. *Psychological Methods*. Advance online publication.
+Ollero, R., Estrada, E., Hunter, M. D., & Cáncer, P. F. (2025). Characterizing affect dynamics with a damped linear oscillator model: Theoretical considerations and recommendations for individual-level applications. *Psychological Methods, 30*(5), 1095–1112.
