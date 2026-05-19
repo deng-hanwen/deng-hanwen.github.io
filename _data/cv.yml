@@ -38,6 +38,15 @@ cv:
         highlights:
           - "Distinction"
 
+      - institution: University of Dundee
+        location: Dundee, UK
+        area: Biomedical Engineering
+        studyType: Exchange Programme
+        start_date: 2019-09
+        end_date: 2020-07
+        highlights:
+          - "Distinction"
+
       - institution: Southern Medical University
         location: Guangzhou, China
         area: Biomedical Engineering
