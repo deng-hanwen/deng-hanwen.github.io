@@ -21,11 +21,9 @@ related_publications: false
 
 ## Overview
 
-Bipolar disorder (BD) is characterised not only by episodic symptom states but by the *dynamics* of how mood moves over time — how quickly it shifts, how far it deviates, and how readily it returns to baseline. Understanding these dynamic properties offers a richer account of emotional vulnerability than static symptom ratings, and may yield computationally tractable biomarkers capable of prospectively indexing clinical risk.
+Existing EMA studies of bipolar disorder (BD) estimate average mood dynamics across the study period, missing how affect evolves *within a person* as an episode approaches. The **Damped Linear Oscillator (DLO)** model offers an alternative: mechanistically suited to BD's oscillatory timescale, it captures two dynamic signatures — **momentum** (η) and **damping** (ζ) — in continuous time.
 
-This project investigates person-level affect dynamics in BD versus healthy controls (HC) using dense ecological momentary assessment (EMA) data from the **Mood Zoom** platform (5 assessments/day, up to 10 weeks; N = 94). The central question is: **do the dynamic properties of positive affect (PA) and negative affect (NA) differ between BD and HC, and do they prospectively predict changes in manic or depressive symptom severity?**
-
-PA and NA composites were derived via principal component analysis (PCA) applied to six mood items (*Elated, Energetic, Irritable, Sad, Anxious, Angry*), and modelled using two complementary approaches operating at different analytical timescales.
+This project applies DLO modelling to dense EMA data (N = 94 BD + HC, 5 assessments/day, up to 8 weeks), testing whether DLO parameters are sensitive to prospective manic and depressive symptom change. PA and NA composites were derived via PCA from six mood items (*Elated, Energetic, Irritable, Sad, Anxious, Angry*).
 
 ---
 
@@ -45,8 +43,8 @@ Two parameters fully characterise the system's dynamics:
 
 | Parameter | Name | Interpretation |
 |-----------|------|----------------|
-| **η (eta)** | Oscillation frequency / lability | Coefficient of position (x). More negative η → higher oscillation frequency → greater emotional lability (more rapid, pronounced mood fluctuations). |
-| **ζ (zeta)** | Dampening / resilience | Coefficient of velocity (ẋ). More negative ζ → stronger dampening → faster return to equilibrium → greater affective resilience. |
+| **η (eta)** | Momentum / lability | Coefficient of position (x). More negative η → higher oscillation frequency → greater affective lability. |
+| **ζ (zeta)** | Damping / resilience | Coefficient of velocity (ẋ). More negative ζ → stronger damping → faster return to equilibrium → greater resilience. |
 
 <br>
 
@@ -70,21 +68,19 @@ Associations between DLO parameters and prospective manic and depressive symptom
 
 ---
 
-## Complementary Analysis: Linear Mixed-Effects (LME) Modelling
+## Control Analysis: Linear Mixed-Effects (LME) Modelling
 
-To complement the person-level DLO approach, an **LME model** was estimated at the observation level to examine *state-dependent* affect reactivity — specifically, whether the restoring force toward equilibrium varies with the current direction of mood movement, and whether this differs between BD and HC. Affect velocity was derived by fitting a natural cubic spline to each participant's time series and computing the instantaneous derivative, within-person standardised prior to modelling.
+An **LME model** fitted to moment-to-moment mood scores served as a control analysis, testing whether the associations between symptom change and affect dynamics were detectable without the DLO framework. Within the LME, restoring force is approximated by the coefficient on current affect state (x), and momentum by the coefficient on its lagged value (x_{t-1}):
 
-This dual-method design reflects a deliberate analytical distinction: DLO captures the **average dispositional properties** of the affect system over weeks, while LME captures **moment-to-moment state-dependent regulation** — two complementary windows onto the same underlying dynamics.
+$$x_{ti} \sim \underbrace{\beta_1 x_{ti}}_{\text{restoring force}} + \underbrace{\beta_2 x_{(t-1)i}}_{\text{momentum}} + \cdots$$
+
+The comparison is deliberate: DLO estimates these as continuous-time system parameters from the full trajectory, while LME treats them as discrete-lag regression coefficients — a coarser approximation that does not capture the oscillatory structure.
 
 ---
 
 ## Key Findings
 
-Results indicate a **dissociation between PA and NA dynamics**, with the two affect streams showing qualitatively distinct relationships to clinical trajectories. Notably, NA dampening (ζ) emerged as a prospective predictor specifically associated with manic — not depressive — symptom change in BD, suggesting that the resilience of the negative affect system may carry information about vulnerability to mania that is not captured by positive affect dynamics or static symptom ratings alone.
-
-At the observation level, BD participants showed greater state-dependent NA reactivity than HC, with the direction of current mood movement modulating the strength of the restoring force. Circadian organisation of affect velocity was also more pronounced in BD than HC, with group differences in morning affect dynamics identified for both PA and NA — consistent with disrupted diurnal emotion regulation in this population.
-
-Together, DLO and LME analyses converge on a picture in which BD is characterised by systematically altered affect system dynamics, and in which individual differences in these dynamics carry prospective clinical signal.
+Greater manic worsening was associated with increased PA lability (η) and altered NA damping (ζ), with both signatures specifically linked to mania rather than depression — spanning both affect streams. Critically, neither finding was detectable using LME, underscoring the necessity of DLO for capturing relapse-relevant mood dynamics.
 
 ---
 
