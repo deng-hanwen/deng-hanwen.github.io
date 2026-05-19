@@ -1,81 +1,76 @@
 ---
 layout: page
-title: project 2
-description: a project with a background image and giscus comments
+title: Neurobiological Markers of Opioid Use Disorder
+description: Whole-brain functional connectivity analysis of OUD vs healthy controls using Network-Based Statistics across task and resting-state fMRI
 img: assets/img/3.jpg
 importance: 2
-category: work
-giscus_comments: true
+category: research
+github: https://github.com/deng-hanwen/BrainStateDx-NBS
+related_publications: false
 ---
 
-Every project has a beautiful feature showcase page.
-It's easy to include images in a flexible 3-column grid format.
-Make your photos 1/3, 2/3, or full width.
+<p>
+  <a href="https://github.com/deng-hanwen/BrainStateDx-NBS" class="btn btn-sm z-depth-0" role="button" style="background-color: #424242; color: white;">
+    <i class="fab fa-github"></i> View Code on GitHub
+  </a>
+</p>
 
-To give your project a background in the portfolio page, just add the img tag to the front matter like so:
+> **Note:** This project is ongoing. Results presented here reflect analyses completed to date.
 
-    ---
-    layout: page
-    title: project
-    description: a project with a background image
-    img: /assets/img/12.jpg
-    ---
+---
 
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/1.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/3.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    Caption photos easily. On the left, a road goes through a tunnel. Middle, leaves artistically fall in a hipster photoshoot. Right, in another hipster photoshoot, a lumberjack grasps a handful of pine needles.
-</div>
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    This image can also have a caption. It's like magic.
-</div>
+## Overview
 
-You can also put regular text between your rows of images.
-Say you wanted to write a little bit about your project before you posted the rest of the images.
-You describe how you toiled, sweated, _bled_ for your project, and then... you reveal its glory in the next row of images.
+Opioid Use Disorder (OUD) is associated with widespread alterations in brain function, yet it remains unclear whether these reflect **stable neurobiological trait markers** or transient, state-dependent disruptions. Resolving this distinction has direct implications for identifying diagnostic biomarkers versus treatment-sensitive targets.
 
-<div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    You can also have artistically styled 2/3 + 1/3 images, like these.
-</div>
+This project examines whole-brain functional connectivity (FC) in OUD patients (n = 53) compared to healthy controls (n = 38) using fMRI data collected during two cognitive tasks — the Monetary Incentive Delay (MID) reward task and the Stroop cognitive control task — as well as resting-state. The primary questions are:
 
-The code is simple.
-Just wrap your images with `<div class="col-sm">` and place them inside `<div class="row">` (read more about the <a href="https://getbootstrap.com/docs/4.4/layout/grid/">Bootstrap Grid</a> system).
-To make images responsive, add `img-fluid` class to each; for rounded corners and shadows use `rounded` and `z-depth-1` classes.
-Here's the code for the last row of images above:
+1. Are OUD–HC connectivity differences **consistent across task contexts**, or specific to particular cognitive demands?
+2. Do connectivity differences represent **stable trait markers**, or are they modulated by treatment response?
 
-{% raw %}
+---
 
-```html
-<div class="row justify-content-sm-center">
-  <div class="col-sm-8 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-  <div class="col-sm-4 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-</div>
-```
+## Methods
 
-{% endraw %}
+### Parcellation and Connectivity
+
+Functional connectivity matrices were derived using the **268-node Shen atlas**, yielding a whole-brain connectome organised into 10 canonical functional networks (frontoparietal, default mode, motor, visual, salience, subcortical, cerebellar, and others). Connectivity was quantified as Fisher-z-transformed pairwise correlations.
+
+### Network-Based Statistics (NBS)
+
+Group differences in FC were tested using the **NBS toolbox** (Zalesky et al., 2010), a mass-univariate approach that controls family-wise error rate over edges by applying cluster-based inference over connected subgraphs of the connectome. Primary threshold: *t* = 3.1, 5,000 permutations, α = 0.05.
+
+Four complementary analysis strategies were employed:
+
+| Analysis | Approach |
+|---|---|
+| Per-task 2-sample *t*-test | Separate OUD vs HC comparisons within MID and Stroop |
+| GLM with repeated measures | Full GLM testing group main effect and Dx × Task interaction across 182 observations |
+| Averaged matrix *t*-test | Element-wise average of MID + Stroop per subject prior to testing |
+| Conjunction analysis | Edges surviving NBS in **both** MID and Stroop independently |
+
+A **repeated-measures NBR** approach extended the standard NBS to a within-subject design, with subject-level dummy variables and exchange blocks preserving the repeated-measures structure under permutation.
+
+### Treatment Response Analysis
+
+A subset of OUD participants with longitudinal outcome data were classified as responders vs non-responders based on urine toxicology confirmation. The diagnostic FC networks identified above were then tested as predictors of treatment response.
+
+---
+
+## Key Findings
+
+The analyses reveal a consistent pattern: **OUD is characterised by large-scale FC alterations that are state-general rather than task-specific**.
+
+The Dx × Task interaction was non-significant, while the group main effect was highly robust, with thousands of edges differentiating OUD from HC across both tasks. Conjunction analysis identified a core set of edges surviving independently in both MID and Stroop contexts — implying these differences do not depend on the cognitive demands of the task being performed.
+
+Critically, the OUD–HC differences identified under task conditions **persisted in resting-state FC**, providing convergent evidence for a stable trait interpretation rather than a task-driven artefact. Key network hubs implicated in the OUD > HC direction include subcortical and frontoparietal nodes, consistent with circuits implicated in reward processing and cognitive control in the addiction literature.
+
+However, these same diagnostic networks **did not predict treatment response**, suggesting a dissociation: the neural signature of OUD pathology and the neural correlates of recovery may reflect distinct biological processes.
+
+---
+
+## Code & Reproducibility
+
+Analysis code is available at **[github.com/deng-hanwen/BrainStateDx-NBS](https://github.com/deng-hanwen/BrainStateDx-NBS)**, including MATLAB scripts for NBS analysis, conjunction and overlap analyses, and network-level summaries. Raw fMRI data are not shared due to participant confidentiality.
+
+*Ongoing project. Yale University, Dr Sarah Yip.*

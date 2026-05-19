@@ -1,80 +1,74 @@
 ---
 layout: page
-title: project 4
-description: another without an image
-img:
-importance: 3
-category: fun
+title: Whole-Brain Resting-State fMRI Prediction of Ambiguity Tolerance
+description: Connectome-based predictive modelling of resting-state functional connectivity as a predictor of individual differences in ambiguity tolerance
+img: assets/img/7.jpg
+importance: 4
+category: research
+github: https://github.com/deng-hanwen/RiskBehavior_controlCPM
+related_publications: false
 ---
 
-Every project has a beautiful feature showcase page.
-It's easy to include images in a flexible 3-column grid format.
-Make your photos 1/3, 2/3, or full width.
+<p>
+  <a href="https://github.com/deng-hanwen/RiskBehavior_controlCPM" class="btn btn-sm z-depth-0" role="button" style="background-color: #424242; color: white;">
+    <i class="fab fa-github"></i> View Code on GitHub
+  </a>
+</p>
 
-To give your project a background in the portfolio page, just add the img tag to the front matter like so:
+> **Note:** Accepted as Poster Presentation at the Computational Psychiatry Conference, 2026.
 
-    ---
-    layout: page
-    title: project
-    description: a project with a background image
-    img: /assets/img/12.jpg
-    ---
+---
 
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/1.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/3.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    Caption photos easily. On the left, a road goes through a tunnel. Middle, leaves artistically fall in a hipster photoshoot. Right, in another hipster photoshoot, a lumberjack grasps a handful of pine needles.
-</div>
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    This image can also have a caption. It's like magic.
-</div>
+## Overview
 
-You can also put regular text between your rows of images.
-Say you wanted to write a little bit about your project before you posted the rest of the images.
-You describe how you toiled, sweated, _bled_ for your project, and then... you reveal its glory in the next row of images.
+Individual differences in how people tolerate ambiguous outcomes — situations where probabilities are unknown — have been linked to a range of psychiatric conditions, including anxiety, addiction, and mood disorders. Yet the neural basis of **ambiguity tolerance** at the individual level remains poorly characterised.
 
-<div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    You can also have artistically styled 2/3 + 1/3 images, like these.
-</div>
+This project asks whether **resting-state functional connectivity** can predict individual differences in ambiguity tolerance in a healthy community sample (n = 59), using connectome-based predictive modelling (CPM) — a data-driven framework that identifies brain–behaviour associations at the whole-connectome level without requiring a priori region-of-interest selection.
 
-The code is simple.
-Just wrap your images with `<div class="col-sm">` and place them inside `<div class="row">` (read more about the <a href="https://getbootstrap.com/docs/4.4/layout/grid/">Bootstrap Grid</a> system).
-To make images responsive, add `img-fluid` class to each; for rounded corners and shadows use `rounded` and `z-depth-1` classes.
-Here's the code for the last row of images above:
+---
 
-{% raw %}
+## Methods
 
-```html
-<div class="row justify-content-sm-center">
-  <div class="col-sm-8 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-  <div class="col-sm-4 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-</div>
-```
+### Behavioural Parameters
 
-{% endraw %}
+Participants completed the **Lottery and Sure-thing Risk and Ambiguity (LSRA) task** — an incentivised economic decision-making paradigm in which they chose between a guaranteed payoff and lotteries varying in risk (known probabilities) and ambiguity (unknown probabilities).
+
+Choices were fitted with an expected utility model to extract three parameters per participant:
+
+| Parameter | Interpretation |
+|---|---|
+| **γ (gamma)** | Ambiguity tolerance — willingness to engage with unknown-probability outcomes |
+| **α (alpha)** | Risk tolerance — curvature of the utility function |
+| **β (beta)** | Choice sensitivity (inverse temperature) |
+
+Model quality was assessed via *R*² ≥ 0.10 and parameter bound checks. Final sample after QC: n = 59.
+
+### Connectome-Based Predictive Modelling (CPM)
+
+CPM was applied to resting-state fMRI connectivity matrices derived from the **268-node Shen atlas** (27P noise model). The pipeline:
+
+1. Correlate each edge in the connectivity matrix with the behavioural target across subjects
+2. Select edges at *p* < 0.01 into positive and negative networks
+3. Sum selected edges into network strength scores per subject
+4. Predict held-out subjects via leave-one-out cross-validation (LOO-CV)
+5. Evaluate prediction accuracy as the correlation between predicted and observed behaviour
+
+CPM was run separately for γ, α, and β.
+
+---
+
+## Key Findings
+
+Resting-state FC did not significantly predict ambiguity tolerance, risk tolerance, or choice sensitivity under cross-validation. None of the CPM models achieved above-chance prediction accuracy.
+
+This null result is interpretable in the context of accumulating evidence that **state-dependent processes** — engaged specifically during task performance — may be necessary to capture individual differences in decision-making parameters that are context-sensitive. Resting-state connectivity, reflecting intrinsic brain organisation in the absence of task demands, may be insufficient to capture the variance in ambiguity tolerance that is sensitive to contextual and attentional factors.
+
+The findings directly inform future study design: **task-based fMRI paradigms** that engage ambiguity processing during scanning are likely to offer greater predictive power than resting-state approaches for this class of decision-making phenotype.
+
+---
+
+## Code & Reproducibility
+
+All analysis code is available at **[github.com/deng-hanwen/RiskBehavior_controlCPM](https://github.com/deng-hanwen/RiskBehavior_controlCPM)**, including MATLAB scripts for behavioural preprocessing, utility model fitting, and the CPM pipeline. Raw data are not shared to protect participant confidentiality.
+
+*Yale University & Rutgers University. Dr Sarah Yip & Dr Anna Konova.*
