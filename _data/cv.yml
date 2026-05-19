@@ -5,7 +5,7 @@ cv:
   location: New Haven, CT
   image: ""
   summary: >
-    Postgraduate researcher with around 3 years of hands-on experience across Yale University and
+    Postgraduate researcher with 3 years of hands-on experience across Yale University and
     University College London, specialising in computational psychiatry, affective neuroscience,
     and neuroimaging. Contributed to 2 publications, accepted for an oral presentation and 2 poster
     presentations at conferences. Skilled in R and MATLAB; experienced in computational modelling,
@@ -38,6 +38,15 @@ cv:
         highlights:
           - "Distinction"
 
+      - institution: University of Dundee
+        location: Dundee, UK
+        area: Biomedical Engineering
+        studyType: Exchange Programme
+        start_date: 2019-09
+        end_date: 2020-07
+        highlights:
+          - "Distinction"
+
       - institution: Southern Medical University
         location: Guangzhou, China
         area: Biomedical Engineering
@@ -46,7 +55,6 @@ cv:
         end_date: 2020-07
         highlights:
           - "GPA: 3.1/4.0"
-          - "Exchange Programme — University of Dundee, Dundee UK (2019–2020, Distinction)"
 
     Research Experience:
       - position: "Neurobiological Markers of Opioid Use Disorder"
@@ -159,7 +167,7 @@ cv:
         summary: |
           Poster Presentation.
           - Large-scale transdiagnostic longitudinal study (N=1,800 clinical + 600 HC, 16 clinics).
-          - Preliminary data (N=218): 70% multi-diagnosis across schizophrenia, depression, PTSD, bipolar, OCD, and SUD.
+          - Preliminary data (N=218): 70% of participants met criteria for multiple diagnoses, spanning schizophrenia-spectrum disorders, major depression, PTSD, bipolar disorder, OCD, and substance use disorder (SUD).
           - Computational tasks + theory-driven modelling to characterise individual symptom trajectories.
 
     Publications:
@@ -213,8 +221,7 @@ cv:
         awarder: National Competition
         summary: |
           - Category C is designated for non-English-major undergraduates; tests academic reading, writing, and oral communication.
-          - Award rate: Third Prize strictly limited to 5% (50‰) of each university's preliminary participants.
-          - Quota calculated per institution: 5% of each school's preliminary entrant count, rounded to the nearest integer.
+          - Third Prize quota strictly limited to 5% (50‰) of each institution's preliminary entrants, rounded to the nearest integer.
 
       - title: "Challenge Cup Extracurricular Academic Science and Technology Competition — Third Prize"
         date: 2018
