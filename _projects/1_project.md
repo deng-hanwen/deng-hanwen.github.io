@@ -21,7 +21,7 @@ related_publications: false
 
 ## Overview
 
-Existing EMA studies of bipolar disorder (BD) estimate average mood dynamics across the study period, missing how affect evolves *within a person* as an episode approaches. The **Damped Linear Oscillator (DLO)** model offers an alternative: mechanistically suited to BD's oscillatory timescale, it captures two dynamic signatures — **momentum** (η) and **damping** (ζ) — in continuous time.
+Existing EMA studies of bipolar disorder (BD) estimate average mood dynamics across the study period, missing how affect evolves *within a person* as an episode approaches. The **Damped Linear Oscillator (DLO)** model offers an alternative: mechanistically suited to BD's oscillatory timescale, it captures two dynamic signatures — **emotional lability** (η) and **resilience** (ζ) — in continuous time.
 
 This project applies DLO modelling to dense EMA data (N = 94 BD + HC, 5 assessments/day, up to 8 weeks), testing whether DLO parameters are sensitive to prospective manic and depressive symptom change. PA and NA composites were derived via PCA from six mood items (*Elated, Energetic, Irritable, Sad, Anxious, Angry*).
 
@@ -43,8 +43,8 @@ Two parameters fully characterise the system's dynamics:
 
 | Parameter | Name | Interpretation |
 |-----------|------|----------------|
-| **η (eta)** | Momentum / lability | Coefficient of position (x). More negative η → higher oscillation frequency → greater affective lability. |
-| **ζ (zeta)** | Damping / resilience | Coefficient of velocity (ẋ). More negative ζ → stronger damping → faster return to equilibrium → greater resilience. |
+| **η (eta)** | Emotional Lability | Coefficient of position (*x*). More negative η → higher oscillation frequency → greater affective lability (Ollero et al., 2025). |
+| **ζ (zeta)** | Resilience | Coefficient of velocity (*ẋ*). More negative ζ → stronger damping → faster return to equilibrium after displacement (Ollero et al., 2025). |
 
 <br>
 
@@ -70,17 +70,22 @@ Associations between DLO parameters and prospective manic and depressive symptom
 
 ## Control Analysis: Linear Mixed-Effects (LME) Modelling
 
-An **LME model** fitted to moment-to-moment mood scores served as a control analysis, testing whether the associations between symptom change and affect dynamics were detectable without the DLO framework. Within the LME, restoring force is approximated by the coefficient on current affect state (x), and momentum by the coefficient on its lagged value (x_{t-1}):
+An **LME model** fitted to moment-to-moment affect velocity served as a control analysis, testing whether the associations between symptom change and affect dynamics were detectable without the DLO framework. Within the LME, restoring force and momentum are operationalised as discrete-lag regression coefficients on lagged position ($x_{t-1}$) and lagged velocity ($\dot{x}_{t-1}$):
 
-$$x_{ti} \sim \underbrace{\beta_1 x_{ti}}_{\text{restoring force}} + \underbrace{\beta_2 x_{(t-1)i}}_{\text{momentum}} + \cdots$$
+$$\dot{x}_{ti} = \underbrace{\beta_1 x_{(t-1)i}}_{\text{restoring force}} + \underbrace{\beta_2 \dot{x}_{(t-1)i}}_{\text{momentum}} + \cdots$$
 
-The comparison is deliberate: DLO estimates these as continuous-time system parameters from the full trajectory, while LME treats them as discrete-lag regression coefficients — a coarser approximation that does not capture the oscillatory structure.
+The comparison is deliberate: DLO estimates these as continuous-time system parameters from the full trajectory, whereas LME treats them as discrete-lag coefficients — a coarser approximation that does not recover the oscillatory structure of the underlying process.
 
 ---
 
 ## Key Findings
 
-Greater manic worsening was associated with increased PA lability (η) and altered NA damping (ζ), with both signatures specifically linked to mania rather than depression — spanning both affect streams. Critically, neither finding was detectable using LME, underscoring the necessity of DLO for capturing relapse-relevant mood dynamics.
+NA resilience (ζ) significantly predicted manic symptom worsening in the full BD sample (*b* = −0.175, *p* = .011); PA lability (η) predicted manic worsening in the stable BD subsample (*b* = −0.028, *p* = .013). Both signatures were specific to mania rather than depression, and neither was detectable using LME — underscoring the necessity of the DLO framework for capturing relapse-relevant mood dynamics.
+
+<div style="text-align: center; margin: 2rem 0;">
+  <img src="/assets/img/ema_dlo_results.png" alt="Partial regression plots: DLO parameters vs manic symptom change" style="max-width: 95%; border: 1px solid #eee; padding: 8px;">
+  <p style="font-size: 0.85em; color: #666; margin-top: 0.5rem;"><em>Partial regression plots</em> showing the relationship between DLO parameters (η, ζ for PA and NA) and manic symptom change (ΔAltman), controlling for other predictors in the stepwise model. Significant associations are shown in the top row (NA ζ, full BD; PA η, stable BD).</p>
+</div>
 
 ---
 
