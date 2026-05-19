@@ -4,7 +4,7 @@ title: Whole-Brain Resting-State fMRI Prediction of Ambiguity Tolerance
 description: Connectome-based predictive modelling of resting-state functional connectivity as a predictor of individual differences in ambiguity tolerance
 img: assets/img/7.jpg
 importance: 3
-category: research
+category: Computational and Neuroimaging
 github: https://github.com/deng-hanwen/RiskBehavior_controlCPM
 related_publications: false
 ---

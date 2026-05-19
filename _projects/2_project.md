@@ -4,7 +4,7 @@ title: Neurobiological Markers of Opioid Use Disorder
 description: Whole-brain functional connectivity analysis of OUD vs healthy controls using Network-Based Statistics across task and resting-state fMRI
 img: assets/img/3.jpg
 importance: 4
-category: research
+category: Computational and Neuroimaging
 github: https://github.com/deng-hanwen/BrainStateDx-NBS
 related_publications: false
 ---

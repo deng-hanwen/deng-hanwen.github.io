@@ -4,7 +4,7 @@ title: Mood Velocity and Dynamics in Bipolar Disorder
 description: Continuous-time dynamical systems modelling of ecological momentary assessment data to characterise affect lability and dampening in bipolar disorder
 img: assets/img/proj_ema.png
 importance: 1
-category: research
+category: EMA
 github: https://github.com/deng-hanwen/EMA-mood-dynamics
 related_publications: false
 ---

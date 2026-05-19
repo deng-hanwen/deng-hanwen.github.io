@@ -4,7 +4,7 @@ title: Computational Markers and Clinical Vulnerability in Early OUD Treatment
 description: MRes dissertation — utility-based computational modelling of a risk and ambiguity decision-making task in methadone treatment, with propensity score correction for non-random missingness
 img: assets/img/5.jpg
 importance: 2
-category: research
+category: Computational and Neuroimaging
 github: https://github.com/deng-hanwen/OUD_ambiguity_tolerance
 related_publications: false
 ---
