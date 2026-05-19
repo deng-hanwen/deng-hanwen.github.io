@@ -1,8 +1,8 @@
 ---
 layout: page
-title: projects
+title: Research
 permalink: /projects/
-description: A growing collection of your cool projects.
+description: Computational psychiatry, neuroimaging, and EMA research projects.
 nav: true
 nav_order: 3
 display_categories: [Computational and Neuroimaging, EMA, Psychometric and Clinical Audit]
