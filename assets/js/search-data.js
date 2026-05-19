@@ -411,7 +411,7 @@ ninja.data = [{
           description: "",
           section: "News",},{id: "projects-mood-velocity-and-dynamics-in-bipolar-disorder",
           title: 'Mood Velocity and Dynamics in Bipolar Disorder',
-          description: "Continuous-time dynamical systems modelling of EMA mood data to characterise affect lability and dampening in bipolar disorder",
+          description: "Continuous-time dynamical systems modelling of ecological momentary assessment data to characterise affect lability and dampening in bipolar disorder",
           section: "Projects",handler: () => {
               window.location.href = "/projects/1_project/";
             },},{id: "projects-project-2",
