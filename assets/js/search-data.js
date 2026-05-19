@@ -409,9 +409,9 @@ ninja.data = [{
             },},{id: "news-a-simple-inline-announcement-with-markdown-emoji-sparkles-smile",
           title: 'A simple inline announcement with Markdown emoji! :sparkles: :smile:',
           description: "",
-          section: "News",},{id: "projects-project-1",
-          title: 'project 1',
-          description: "with background image",
+          section: "News",},{id: "projects-mood-velocity-and-dynamics-in-bipolar-disorder",
+          title: 'Mood Velocity and Dynamics in Bipolar Disorder',
+          description: "Continuous-time dynamical systems modelling of EMA mood data to characterise affect lability and dampening in bipolar disorder",
           section: "Projects",handler: () => {
               window.location.href = "/projects/1_project/";
             },},{id: "projects-project-2",
