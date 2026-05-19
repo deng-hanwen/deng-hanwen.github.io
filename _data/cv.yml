@@ -38,15 +38,6 @@ cv:
         highlights:
           - "Distinction"
 
-      - institution: University of Dundee
-        location: Dundee, UK
-        area: Biomedical Engineering
-        studyType: Exchange Programme
-        start_date: 2019-09
-        end_date: 2020-07
-        highlights:
-          - "Distinction"
-
       - institution: Southern Medical University
         location: Guangzhou, China
         area: Biomedical Engineering
@@ -55,6 +46,7 @@ cv:
         end_date: 2020-07
         highlights:
           - "GPA: 3.1/4.0"
+          - "Exchange Programme — University of Dundee, Dundee UK (2019–2020, Distinction)"
 
     Research Experience:
       - company: Yale University, Dr Sarah Yip
@@ -64,9 +56,9 @@ cv:
         end_date: present
         summary: "Neurobiological Markers of Opioid Use Disorder"
         highlights:
-          - "Analysed whole-brain functional connectivity in OUD (n=53) vs healthy controls (n=38) across MID reward and Stroop cognitive control tasks using Network-Based Statistics (NBS, 268-node Shen atlas); applied repeated-measures mixed-effects network analysis (NBR, R) and conjunction analysis to establish robustness of findings."
-          - "Identified large-scale FC networks robustly differentiating OUD from healthy controls; demonstrated that group differences persist in resting-state FC, supporting a stable trait interpretation rather than task-driven artefact."
-          - "Found that diagnostic FC networks do not predict treatment response, suggesting a dissociation between neural markers of OUD pathology and markers of recovery, consistent with previous addiction neuroscience literature."
+          - "Analysed whole-brain FC in OUD (n=53) vs HC (n=38) across MID and Stroop tasks using NBS (268-node Shen atlas); robustness established via NBR and conjunction analysis."
+          - "Identified large-scale FC networks differentiating OUD from HC; differences persisted in resting-state FC, supporting a stable trait interpretation."
+          - "Diagnostic FC networks did not predict treatment response, suggesting dissociation between neural markers of OUD pathology and recovery."
 
       - company: Yale University & Rutgers University, Dr Sarah Yip & Dr Anna Konova
         position: Postgraduate Associate
@@ -75,8 +67,8 @@ cv:
         end_date: present
         summary: "Whole-Brain Resting-State fMRI Prediction of Ambiguity Tolerance"
         highlights:
-          - "Applied connectome-based predictive modelling (CPM) to resting-state fMRI data (n=93) to predict individual differences in ambiguity tolerance derived from an economic decision-making task."
-          - "Findings suggest that state-dependent processes underlying ambiguity tolerance may require task-based rather than resting-state connectivity paradigms, directly informing future study design."
+          - "Applied CPM to resting-state fMRI (n=93) to predict individual differences in ambiguity tolerance from an economic decision-making task."
+          - "Results suggest ambiguity tolerance requires task-based rather than resting-state connectivity paradigms."
 
       - company: UCL / Yale University
         position: MRes Dissertation (Distinction)
@@ -85,9 +77,9 @@ cv:
         end_date: 2025-06
         summary: "Computational Markers and Clinical Vulnerability in Early Opioid Use Disorder Treatment"
         highlights:
-          - "Fitted a utility-based computational model to a Risk and Ambiguity Decision-Making Task (n=15, 8-week dense-sampling design) to extract ambiguity tolerance and risk tolerance parameters; tested whether ambiguity tolerance predicted prospective opioid use via time-lagged mixed-effects logistic regression."
-          - "Identified systematic non-random missingness (34.5% of sessions excluded); studied as a clinical signal and applied propensity score weighting to correct for exclusion bias."
-          - "Mediation analysis identified distinct pathways from clinical vulnerability to data dropout: cognitive ability and positive affect were protective, while craving, sleep disturbance, and distress intolerance operated through active substance use."
+          - "Fitted a utility-based computational model to a Risk and Ambiguity Decision-Making Task (n=15, 8-week dense-sampling) to extract ambiguity and risk tolerance parameters."
+          - "Identified systematic non-random missingness (34.5% excluded); studied as a clinical signal and corrected via propensity score weighting."
+          - "Mediation analysis revealed distinct dropout pathways: cognitive ability and positive affect were protective; craving, sleep disturbance, and distress intolerance operated through active substance use."
 
       - company: UCL, Dr Liam Mason
         position: Voluntary Research Assistant
@@ -96,9 +88,9 @@ cv:
         end_date: present
         summary: "Mood Velocity and Dynamics in Bipolar Disorder"
         highlights:
-          - "Analysed longitudinal EMA data capturing mood fluctuations in bipolar disorder and healthy control cohorts across 8-week assessment periods."
-          - "Applied continuous-time dynamical systems modelling, including Damped Linear Oscillator (DLO) modelling and Generalised Local Linear Approximation (GLLA), to characterise mood instability parameters."
-          - "Co-authoring manuscript on mood velocity metrics as prospective indices of manic symptom intensification."
+          - "Analysed dense EMA data (N=94, 5×/day, up to 10 weeks) on mood dynamics in bipolar disorder vs healthy controls."
+          - "Applied Damped Linear Oscillator (DLO) modelling and GLLA to characterise affect lability and dampening parameters."
+          - "Co-authoring manuscript on NA dampening as a prospective index of manic symptom intensification."
 
       - company: UCL, Dr Veronica Ranieri & Dr Rob Saunders
         position: Voluntary Research Assistant
@@ -169,7 +161,7 @@ cv:
           - Hanwen Deng
         date: 2025
         awarder: YPGA Symposium — IMPACT-MH
-        summary: "Poster Presentation. IMPACT-MH (Individually Measured Phenotypes to Advance Computational Translation in Mental Health) is a large-scale longitudinal study across 16 clinics recruiting N=1,800 clinical and N=600 healthy control participants. Presented preliminary data (N=218; 58.3% female) showing high diagnostic complexity: 70% of participants carried multiple diagnoses spanning schizophrenia/psychosis, depression, PTSD, bipolar disorder, OCD, and substance use disorders. Longitudinal transdiagnostic design combining standardised clinical assessments with computational behavioural tasks and theory-driven modelling to characterise individual symptom trajectories and link intra-individual variability to underlying mechanisms."
+        summary: "Poster Presentation. Large-scale transdiagnostic longitudinal study (N=1,800 clinical + 600 HC, 16 clinics). Preliminary data (N=218): 70% multi-diagnosis across schizophrenia, depression, PTSD, bipolar, OCD, and SUD. Computational tasks + theory-driven modelling to characterise individual symptom trajectories."
 
     Publications:
       - title: "Negative affect damping as a prospective index of manic symptom intensification in bipolar disorder: a longitudinal ecological momentary assessment study"

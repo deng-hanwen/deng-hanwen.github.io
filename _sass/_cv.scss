@@ -39,6 +39,27 @@ a.btncv:hover {
 }
 
 /*****************************
+ * CV highlight item density
+ *****************************/
+
+div.cv ul.items {
+  font-size: 0.83rem;
+  margin-top: 0.3rem;
+  padding-left: 0.5rem;
+
+  li {
+    margin-bottom: 0.25rem;
+    line-height: 1.45;
+    color: var(--global-text-color);
+  }
+}
+
+div.cv .list-group-item {
+  padding-top: 0.9rem;
+  padding-bottom: 0.9rem;
+}
+
+/*****************************
  * CV TIME_TABLE styles
  *****************************/
 
