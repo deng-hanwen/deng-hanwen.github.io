@@ -414,19 +414,19 @@ ninja.data = [{
           description: "Continuous-time dynamical systems modelling of ecological momentary assessment data to characterise affect lability and dampening in bipolar disorder",
           section: "Projects",handler: () => {
               window.location.href = "/projects/1_project/";
-            },},{id: "projects-project-2",
-          title: 'project 2',
-          description: "a project with a background image and giscus comments",
+            },},{id: "projects-neurobiological-markers-of-opioid-use-disorder",
+          title: 'Neurobiological Markers of Opioid Use Disorder',
+          description: "Whole-brain functional connectivity analysis of OUD vs healthy controls using Network-Based Statistics across task and resting-state fMRI",
           section: "Projects",handler: () => {
               window.location.href = "/projects/2_project/";
-            },},{id: "projects-project-3-with-very-long-name",
-          title: 'project 3 with very long name',
-          description: "a project that redirects to another website",
+            },},{id: "projects-computational-markers-and-clinical-vulnerability-in-early-oud-treatment",
+          title: 'Computational Markers and Clinical Vulnerability in Early OUD Treatment',
+          description: "MRes dissertation — utility-based computational modelling of a risk and ambiguity decision-making task in methadone treatment, with propensity score correction for non-random missingness",
           section: "Projects",handler: () => {
               window.location.href = "/projects/3_project/";
-            },},{id: "projects-project-4",
-          title: 'project 4',
-          description: "another without an image",
+            },},{id: "projects-whole-brain-resting-state-fmri-prediction-of-ambiguity-tolerance",
+          title: 'Whole-Brain Resting-State fMRI Prediction of Ambiguity Tolerance',
+          description: "Connectome-based predictive modelling of resting-state functional connectivity as a predictor of individual differences in ambiguity tolerance",
           section: "Projects",handler: () => {
               window.location.href = "/projects/4_project/";
             },},{id: "projects-project-5",
