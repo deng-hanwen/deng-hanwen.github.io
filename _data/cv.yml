@@ -5,7 +5,7 @@ cv:
   location: New Haven, CT
   image: ""
   summary: >
-    Postgraduate researcher with over 4 years of hands-on experience across Yale University and
+    Postgraduate researcher with around 3 years of hands-on experience across Yale University and
     University College London, specialising in computational psychiatry, affective neuroscience,
     and neuroimaging. Contributed to 2 publications, accepted for an oral presentation and 2 poster
     presentations at conferences. Skilled in R and MATLAB; experienced in computational modelling,
@@ -49,58 +49,53 @@ cv:
           - "Exchange Programme — University of Dundee, Dundee UK (2019–2020, Distinction)"
 
     Research Experience:
-      - company: Yale University, Dr Sarah Yip
-        position: Postgraduate Associate
+      - position: "Neurobiological Markers of Opioid Use Disorder"
+        company: "Postgraduate Associate · Yale University, Dr Sarah Yip"
         location: New Haven, CT
         start_date: 2026-01
         end_date: present
-        summary: "Neurobiological Markers of Opioid Use Disorder"
         highlights:
           - "Analysed whole-brain FC in OUD (n=53) vs HC (n=38) across MID and Stroop tasks using NBS (268-node Shen atlas); robustness established via NBR and conjunction analysis."
           - "Identified large-scale FC networks differentiating OUD from HC; differences persisted in resting-state FC, supporting a stable trait interpretation."
           - "Diagnostic FC networks did not predict treatment response, suggesting dissociation between neural markers of OUD pathology and recovery."
 
-      - company: Yale University & Rutgers University, Dr Sarah Yip & Dr Anna Konova
-        position: Postgraduate Associate
+      - position: "Whole-Brain Resting-State fMRI Prediction of Ambiguity Tolerance"
+        company: "Postgraduate Associate · Yale University & Rutgers University, Dr Sarah Yip & Dr Anna Konova"
         location: New Haven, CT
         start_date: 2025-12
         end_date: present
-        summary: "Whole-Brain Resting-State fMRI Prediction of Ambiguity Tolerance"
         highlights:
           - "Applied CPM to resting-state fMRI (n=93) to predict individual differences in ambiguity tolerance from an economic decision-making task."
           - "Results suggest ambiguity tolerance requires task-based rather than resting-state connectivity paradigms."
 
-      - company: UCL / Yale University
-        position: MRes Dissertation (Distinction)
+      - position: "Computational Markers and Clinical Vulnerability in Early Opioid Use Disorder Treatment"
+        company: "MRes Dissertation (Distinction) · UCL / Yale University"
         location: London, UK
         start_date: 2024-09
         end_date: 2025-06
-        summary: "Computational Markers and Clinical Vulnerability in Early Opioid Use Disorder Treatment"
         highlights:
           - "Fitted a utility-based computational model to a Risk and Ambiguity Decision-Making Task (n=15, 8-week dense-sampling) to extract ambiguity and risk tolerance parameters."
           - "Identified systematic non-random missingness (34.5% excluded); studied as a clinical signal and corrected via propensity score weighting."
           - "Mediation analysis revealed distinct dropout pathways: cognitive ability and positive affect were protective; craving, sleep disturbance, and distress intolerance operated through active substance use."
 
-      - company: UCL, Dr Liam Mason
-        position: Voluntary Research Assistant
+      - position: "Mood Velocity and Dynamics in Bipolar Disorder"
+        company: "Voluntary Research Assistant · UCL, Dr Liam Mason"
         location: London, UK
         start_date: 2024-05
         end_date: present
-        summary: "Mood Velocity and Dynamics in Bipolar Disorder"
         highlights:
           - "Analysed dense EMA data (N=94, 5×/day, up to 10 weeks) on mood dynamics in bipolar disorder vs healthy controls."
           - "Applied Damped Linear Oscillator (DLO) modelling and GLLA to characterise affect lability and dampening parameters."
           - "Co-authoring manuscript on NA dampening as a prospective index of manic symptom intensification."
 
-      - company: UCL, Dr Veronica Ranieri & Dr Rob Saunders
-        position: Voluntary Research Assistant
+      - position: "Cross-Country Analysis of Perceived Coercion During COVID-19"
+        company: "Voluntary Research Assistant · UCL, Dr Veronica Ranieri & Dr Rob Saunders"
         location: London, UK
         start_date: 2024-08
         end_date: 2025-03
-        summary: "Cross-Country Analysis of Perceived Coercion During COVID-19"
         highlights:
           - "Led multilevel factor modelling and meta-analysis examining perceived coercion across 11 countries; investigated links with anxiety, depression, and emotion regulation."
-          - "Identified significant cross-country variation in coercion scores, with perceived coercion consistently associated with elevated depression, anxiety, and stress symptoms."
+          - "Identified significant cross-country variation in coercion scores, consistently associated with elevated depression, anxiety, and stress symptoms."
 
     Professional Experience:
       - company: Yale University, Department of Psychiatry — IMPACT-MH Program
@@ -161,7 +156,11 @@ cv:
           - Hanwen Deng
         date: 2025
         awarder: YPGA Symposium — IMPACT-MH
-        summary: "Poster Presentation. Large-scale transdiagnostic longitudinal study (N=1,800 clinical + 600 HC, 16 clinics). Preliminary data (N=218): 70% multi-diagnosis across schizophrenia, depression, PTSD, bipolar, OCD, and SUD. Computational tasks + theory-driven modelling to characterise individual symptom trajectories."
+        summary: |
+          Poster Presentation.
+          - Large-scale transdiagnostic longitudinal study (N=1,800 clinical + 600 HC, 16 clinics).
+          - Preliminary data (N=218): 70% multi-diagnosis across schizophrenia, depression, PTSD, bipolar, OCD, and SUD.
+          - Computational tasks + theory-driven modelling to characterise individual symptom trajectories.
 
     Publications:
       - title: "Negative affect damping as a prospective index of manic symptom intensification in bipolar disorder: a longitudinal ecological momentary assessment study"
@@ -197,22 +196,31 @@ cv:
       - title: "National Mathematical Contest in Modeling — Third Prize"
         date: 2019
         awarder: National Competition
-        summary: "Competed among 42,992 teams nationwide across four core problems including multibeam bathymetric data processing, complex logistics optimisation, airport taxi scheduling, and automobile assembly line balancing."
+        summary: |
+          - Competed among 42,992 teams nationwide.
+          - Problems spanned multibeam bathymetric data processing, logistics optimisation, airport taxi scheduling, and assembly line balancing.
 
       - title: "12th Certification Cup Mathematical Modeling Network Challenge — Third Prize, First Stage"
         date: 2019
         awarder: National Competition
-        summary: "Solved Problem A (Continuous): investigation and optimisation of car-following models on expressways. Competition also included Problem B (Discrete): congestion node identification and scheduling optimisation in traffic networks; and Problem C (Big Data): consumer purchasing behaviour prediction and user profiling based on e-commerce data."
+        summary: |
+          - Problem A (Continuous): investigation and optimisation of car-following models on expressways.
+          - Problem B (Discrete): congestion node identification and scheduling optimisation in traffic networks.
+          - Problem C (Big Data): consumer purchasing behaviour prediction and user profiling based on e-commerce data.
 
       - title: "National English Competition for College Students (NECCS) — Third Prize, Category C"
         date: 2019
         awarder: National Competition
-        summary: "Category C is designated for non-English-major undergraduates; tests academic reading, writing, and oral communication."
+        summary: |
+          - Category C is designated for non-English-major undergraduates; tests academic reading, writing, and oral communication.
+          - Award rate: Third Prize strictly limited to 5% (50‰) of each university's preliminary participants.
+          - Quota calculated per institution: 5% of each school's preliminary entrant count, rounded to the nearest integer.
 
       - title: "Challenge Cup Extracurricular Academic Science and Technology Competition — Third Prize"
         date: 2018
         awarder: Southern Medical University
-        summary: "Project title: CT image-based 3D reconstruction in laparoscopic D3 radical resection for rectal cancer."
+        summary: |
+          - Project: CT image-based 3D reconstruction in laparoscopic D3 radical resection for rectal cancer.
 
       - title: "National College Student's English Reading Contest — Second Prize, Preliminary Competition"
         date: 2018
@@ -238,7 +246,7 @@ cv:
 
     Languages:
       - name: English
-        summary: "Fluent (TEM4 & TEM8 Pass)"
+        summary: "Fluent (TEM4 & TEM8 Pass; IELTS 8.5)"
 
       - name: Mandarin
         summary: "Native"
