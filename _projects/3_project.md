@@ -3,7 +3,7 @@ layout: page
 title: Computational Markers and Clinical Vulnerability in Early OUD Treatment
 description: MRes dissertation — utility-based computational modelling of a risk and ambiguity decision-making task in methadone treatment, with propensity score correction for non-random missingness
 img: assets/img/5.jpg
-importance: 3
+importance: 2
 category: research
 github: https://github.com/deng-hanwen/OUD_ambiguity_tolerance
 related_publications: false
@@ -67,6 +67,8 @@ A mediation framework tested whether the relationship between baseline clinical 
 **Mediation:** Cognitive ability and positive affect were protective against dropout. Craving, sleep disturbance, and distress intolerance operated primarily **through active substance use** — consistent with drug-seeking behaviour disrupting study engagement.
 
 Together, these findings argue that **missingness is a clinically informative endpoint** in dense-sampling designs, and that the distributional properties of retained data should not be assumed to represent the full clinical population.
+
+The null prediction of γ on opioid use raises a deeper question: does ambiguity tolerance, as extracted from this paradigm, reflect a **stable individual trait with a neural substrate** — or is it more state-dependent, varying with clinical context? This question is directly addressed in a companion study using connectome-based predictive modelling in a healthy sample: [Whole-Brain Resting-State fMRI Prediction of Ambiguity Tolerance](/projects/4_project/).
 
 ---
 
