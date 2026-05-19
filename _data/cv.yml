@@ -55,9 +55,9 @@ cv:
         end_date: present
         summary: "Neurobiological Markers of Opioid Use Disorder"
         highlights:
-          - "Analysed whole-brain functional connectivity in OUD (n=53) vs healthy controls (n=38) across MID reward and Stroop tasks using Network-Based Statistics (NBS, 268-node Shen atlas); applied repeated-measures mixed-effects network analysis (NBR) and conjunction analysis."
-          - "Identified large-scale FC networks robustly differentiating OUD from healthy controls; demonstrated group differences persist in resting-state FC, supporting a stable trait interpretation."
-          - "Found diagnostic FC networks do not predict treatment response, suggesting dissociation between neural markers of OUD pathology and markers of recovery."
+          - "Analysed whole-brain functional connectivity in OUD (n=53) vs healthy controls (n=38) across MID reward and Stroop cognitive control tasks using Network-Based Statistics (NBS, 268-node Shen atlas); applied repeated-measures mixed-effects network analysis (NBR, R) and conjunction analysis to establish robustness of findings."
+          - "Identified large-scale FC networks robustly differentiating OUD from healthy controls; demonstrated that group differences persist in resting-state FC, supporting a stable trait interpretation rather than task-driven artefact."
+          - "Found that diagnostic FC networks do not predict treatment response, suggesting a dissociation between neural markers of OUD pathology and markers of recovery, consistent with previous addiction neuroscience literature."
 
       - company: Yale University & Rutgers University, Dr Sarah Yip & Dr Anna Konova
         position: Postgraduate Associate
@@ -67,7 +67,7 @@ cv:
         summary: "Whole-Brain Resting-State fMRI Prediction of Ambiguity Tolerance"
         highlights:
           - "Applied connectome-based predictive modelling (CPM) to resting-state fMRI data (n=93) to predict individual differences in ambiguity tolerance derived from an economic decision-making task."
-          - "Findings suggest state-dependent processes underlying ambiguity tolerance may require task-based rather than resting-state connectivity paradigms."
+          - "Findings suggest that state-dependent processes underlying ambiguity tolerance may require task-based rather than resting-state connectivity paradigms, directly informing future study design."
 
       - company: UCL / Yale University
         position: MRes Dissertation (Distinction)
@@ -76,9 +76,9 @@ cv:
         end_date: 2025-06
         summary: "Computational Markers and Clinical Vulnerability in Early Opioid Use Disorder Treatment"
         highlights:
-          - "Fitted a utility-based computational model to a Risk and Ambiguity Decision-Making Task (n=15, 8-week dense-sampling design) to extract ambiguity tolerance and risk tolerance parameters."
-          - "Identified systematic non-random missingness (34.5% excluded); studied as a clinical signal and applied propensity score weighting to correct for exclusion bias."
-          - "Mediation analysis identified distinct pathways from clinical vulnerability to dropout: cognitive ability and positive affect were protective; craving, sleep disturbance, and distress intolerance operated through active substance use."
+          - "Fitted a utility-based computational model to a Risk and Ambiguity Decision-Making Task (n=15, 8-week dense-sampling design) to extract ambiguity tolerance and risk tolerance parameters; tested whether ambiguity tolerance predicted prospective opioid use via time-lagged mixed-effects logistic regression."
+          - "Identified systematic non-random missingness (34.5% of sessions excluded); studied as a clinical signal and applied propensity score weighting to correct for exclusion bias."
+          - "Mediation analysis identified distinct pathways from clinical vulnerability to data dropout: cognitive ability and positive affect were protective, while craving, sleep disturbance, and distress intolerance operated through active substance use."
 
       - company: UCL, Dr Liam Mason
         position: Voluntary Research Assistant
@@ -88,7 +88,7 @@ cv:
         summary: "Mood Velocity and Dynamics in Bipolar Disorder"
         highlights:
           - "Analysed longitudinal EMA data capturing mood fluctuations in bipolar disorder and healthy control cohorts across 8-week assessment periods."
-          - "Applied Damped Linear Oscillator (DLO) modelling and Generalised Local Linear Approximation (GLLA) to characterise mood instability parameters."
+          - "Applied continuous-time dynamical systems modelling, including Damped Linear Oscillator (DLO) modelling and Generalised Local Linear Approximation (GLLA), to characterise mood instability parameters."
           - "Co-authoring manuscript on mood velocity metrics as prospective indices of manic symptom intensification."
 
       - company: UCL, Dr Veronica Ranieri & Dr Rob Saunders
@@ -98,8 +98,8 @@ cv:
         end_date: 2025-03
         summary: "Cross-Country Analysis of Perceived Coercion During COVID-19"
         highlights:
-          - "Led multilevel factor modelling and meta-analysis examining perceived coercion across 11 countries."
-          - "Identified significant cross-country variation in coercion scores consistently associated with elevated depression, anxiety, and stress symptoms."
+          - "Led multilevel factor modelling and meta-analysis examining perceived coercion across 11 countries; investigated links with anxiety, depression, and emotion regulation."
+          - "Identified significant cross-country variation in coercion scores, with perceived coercion consistently associated with elevated depression, anxiety, and stress symptoms."
 
     Professional Experience:
       - company: Yale University, Department of Psychiatry — IMPACT-MH Program
@@ -116,9 +116,10 @@ cv:
         start_date: 2022-11
         end_date: 2023-05
         highlights:
-          - "Provided specialist psychological support for patients with traumatic brain injuries and complex comorbidities in a secure neuropsychiatric setting."
+          - "Provided specialist psychological support for patients with traumatic brain injuries and complex comorbidities (adult women) in a secure neuropsychiatric setting."
           - "Administered and interpreted neuropsychological assessments (ACE-III, BATCH, WASI-II, RBANS) to inform individualised treatment planning."
-          - "Authored clinical formulations and CPA reports for MDT care planning; delivered psychoeducation to healthcare professionals."
+          - "Authored clinical formulations and CPA reports for MDT care planning; delivered psychoeducation to healthcare professionals on neuropsychological approaches to challenging behaviour."
+          - "Developed evidence-based Positive Behaviour Support (PBS) plans incorporating behavioural recordings and person-centred approaches."
 
       - company: St Andrew's Healthcare — Low Secure Rehabilitation
         position: Dialectical Behaviour Therapy (DBT) Assistant
@@ -126,8 +127,18 @@ cv:
         start_date: 2021-12
         end_date: 2022-11
         highlights:
+          - "Borderline personality disorder population, age 18–24."
           - "Led daily mindfulness and goal-setting sessions; led weekly homework groups and DBT skills training workshops."
-          - "Performed post-crisis debriefing sessions using Behavioural Chain Analysis."
+          - "Performed post-crisis debriefing sessions using Behavioural Chain Analysis to support reflective learning."
+
+      - company: Southern Medical University — Student Union, General Affairs Department
+        position: Minister of General Affairs
+        location: Guangzhou, China
+        start_date: 2016-09
+        end_date: 2018-07
+        highlights:
+          - "Planned and organised large-scale school activities; secured funding of 2,000 RMB for an activity with 240 participants."
+          - "Addressed student concerns regarding accommodation, healthcare, shopping, and communication; launched health assessment events to promote campus life quality."
 
     Conferences & Presentations:
       - title: "When Data Quality Speaks: Computational Markers and Clinical Vulnerability in Early Opioid Use Disorder Treatment"
@@ -149,7 +160,7 @@ cv:
           - Hanwen Deng
         date: 2025
         awarder: YPGA Symposium — IMPACT-MH
-        summary: "Poster Presentation"
+        summary: "Poster Presentation. IMPACT-MH (Individually Measured Phenotypes to Advance Computational Translation in Mental Health) is a large-scale longitudinal study across 16 clinics recruiting N=1,800 clinical and N=600 healthy control participants. Presented preliminary data (N=218; 58.3% female) showing high diagnostic complexity: 70% of participants carried multiple diagnoses spanning schizophrenia/psychosis, depression, PTSD, bipolar disorder, OCD, and substance use disorders. Longitudinal transdiagnostic design combining standardised clinical assessments with computational behavioural tasks and theory-driven modelling to characterise individual symptom trajectories and link intra-individual variability to underlying mechanisms."
 
     Publications:
       - title: "Negative affect damping as a prospective index of manic symptom intensification in bipolar disorder: a longitudinal ecological momentary assessment study"
@@ -185,20 +196,22 @@ cv:
       - title: "National Mathematical Contest in Modeling — Third Prize"
         date: 2019
         awarder: National Competition
-        summary: "Competed among 42,992 teams nationwide."
+        summary: "Competed among 42,992 teams nationwide across four core problems including multibeam bathymetric data processing, complex logistics optimisation, airport taxi scheduling, and automobile assembly line balancing."
 
       - title: "12th Certification Cup Mathematical Modeling Network Challenge — Third Prize, First Stage"
         date: 2019
         awarder: National Competition
-        summary: "Solved Problem A: investigation and optimisation of car-following models on expressways."
+        summary: "Solved Problem A (Continuous): investigation and optimisation of car-following models on expressways. Competition also included Problem B (Discrete): congestion node identification and scheduling optimisation in traffic networks; and Problem C (Big Data): consumer purchasing behaviour prediction and user profiling based on e-commerce data."
 
       - title: "National English Competition for College Students (NECCS) — Third Prize, Category C"
         date: 2019
         awarder: National Competition
+        summary: "Category C is designated for non-English-major undergraduates; tests academic reading, writing, and oral communication."
 
       - title: "Challenge Cup Extracurricular Academic Science and Technology Competition — Third Prize"
         date: 2018
         awarder: Southern Medical University
+        summary: "Project title: CT image-based 3D reconstruction in laparoscopic D3 radical resection for rectal cancer."
 
       - title: "National College Student's English Reading Contest — Second Prize, Preliminary Competition"
         date: 2018
@@ -216,11 +229,11 @@ cv:
       - name: Programming & Software
         keywords: "R, MATLAB, NVivo, PsychoPy, Mimics, SolidWorks, CAD"
 
-      - name: Statistical & Computational Models
-        keywords: "LME, GLMM, Multilevel Logistic Regression, DLO, GLLA, Continuous-Time State-Space Models, RL Models, Expected Utility Models, Prospect Theory Models, Softmax/Luce Choice Models"
-
       - name: Neuroimaging & Analysis Methods
-        keywords: "CPM, NBS, fMRI connectivity analysis, EMA design & analysis, propensity score weighting, mediation analysis, multilevel factor modelling, permutation testing"
+        keywords: "Connectome-Based Predictive Modelling (CPM); Network-Based Statistics (NBS)"
+
+      - name: Statistical & Computational Models
+        keywords: "Linear Mixed-Effects Models (LME); Generalised Linear Mixed Models (GLMM); Multilevel Logistic Regression; Continuous-Time State-Space Model — Damped Linear Oscillator (DLO) Model; Generalised Local Linear Approximation (GLLA); Reinforcement Learning (RL) Model; Expected Utility Model; Prospect Theory Model; Softmax/Luce Choice Model; propensity score weighting; multilevel factor modelling; permutation testing"
 
     Languages:
       - name: English
