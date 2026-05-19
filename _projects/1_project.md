@@ -80,11 +80,11 @@ The comparison is deliberate: DLO estimates these as continuous-time system para
 
 ## Key Findings
 
-NA resilience (ζ) significantly predicted manic symptom worsening in the full BD sample (*b* = −0.175, *p* = .011); PA lability (η) predicted manic worsening in the stable BD subsample (*b* = −0.028, *p* = .013). Both signatures were specific to mania rather than depression, and neither was detectable using LME — underscoring the necessity of the DLO framework for capturing relapse-relevant mood dynamics.
+Manic symptom worsening was associated with changes in DLO parameters across both affect streams, with signatures specific to mania rather than depression. In positive affect, worsening mania was linked to **increased lability** (η) — faster, more pronounced PA oscillations. In negative affect, it was linked to **reduced resilience** (ζ) — a slower, more persistent return of NA to baseline following displacement. Neither pattern was detectable using the LME control analysis, underscoring the necessity of the DLO framework for capturing relapse-relevant mood dynamics.
 
 <div style="text-align: center; margin: 2rem 0;">
-  <img src="/assets/img/ema_dlo_results.png" alt="Partial regression plots: DLO parameters vs manic symptom change" style="max-width: 95%; border: 1px solid #eee; padding: 8px;">
-  <p style="font-size: 0.85em; color: #666; margin-top: 0.5rem;"><em>Partial regression plots</em> showing the relationship between DLO parameters (η, ζ for PA and NA) and manic symptom change (ΔAltman), controlling for other predictors in the stepwise model. Significant associations are shown in the top row (NA ζ, full BD; PA η, stable BD).</p>
+  <img src="/assets/img/ema_conceptual_results.png" alt="Conceptual DLO trajectories illustrating key findings" style="max-width: 98%; border: 1px solid #eee; padding: 8px;">
+  <p style="font-size: 0.85em; color: #666; margin-top: 0.5rem;"><em>Conceptual illustration.</em> DLO simulations showing the direction of observed associations with manic symptom worsening. Panel A: increased PA lability (η) — faster oscillations under high manic symptoms. Panel B: reduced NA resilience (ζ) — slower return to equilibrium. No individual participant data are shown.</p>
 </div>
 
 ---
