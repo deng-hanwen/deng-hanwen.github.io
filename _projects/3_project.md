@@ -98,12 +98,6 @@ Craving, sleep disturbance, and distress intolerance operated primarily through 
 
 ---
 
-## Propensity Score Correction
-
-A secondary methodological contribution was the application of **inverse probability weighting (IPW)** to correct for the selection bias introduced by non-random session exclusion. Retained sessions were reweighted based on the predicted probability of exclusion from clinical covariates, adjusting the analysis sample to better approximate the full clinical distribution. The null finding for γ persisted after IPW correction, ruling out selective attrition as an explanation.
-
----
-
 ## Discussion
 
 The null prediction of γ is, at face value, a null — but it may also point toward something worth examining. γ may be **state-dependent**: estimated from noisy behavioural data in individuals whose cognitive capacity fluctuates with withdrawal, craving, and sleep, it may capture transient state rather than stable trait. Under this interpretation, the null does not mean ambiguity tolerance is clinically irrelevant — it means the right measurement context has not yet been found.
