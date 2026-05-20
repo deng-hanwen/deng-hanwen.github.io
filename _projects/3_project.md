@@ -40,10 +40,13 @@ The study uses a dense longitudinal design: 15 participants completed a Risk and
 
 ## Task: Risk and Ambiguity Decision-Making
 
-Participants completed a 120-trial decision-making task (Konova et al., 2020) presented as two interleaved contexts:
+Participants completed a 120-trial incentive-compatible decision-making task (Konova et al., 2020) across two interleaved contexts. On each trial, participants chose between a guaranteed **$5** and a lottery offering a reward value *v* ($5–$66) or $0:
 
-- **Known-risk context (60 trials):** Choices between a safe option and a lottery with known probability (*p* = 25%, 50%, or 75%) and reward value (*v* = $5–$66)
-- **Ambiguity context (60 trials):** Choices with partially obscured probabilities (ambiguity level *A* = low, medium, or high), requiring subjects to form subjective probability estimates
+- **Known-risk context (120 trials):** The lottery probability *p* was explicitly stated (25%, 50%, or 75%), represented by a physical bag of 100 coloured chips with the exact composition specified. Participants could inspect the bags after the experiment. Each combination of *p* and *v* appeared once, yielding a full factorial design across probability and value levels.
+
+- **Ambiguity context (120 trials):** The probability information was partially occluded by a grey bar covering either 24%, 50%, or 74% of the display (*A* = low, medium, or high ambiguity). The true underlying probability was fixed at 50% on all ambiguity trials — only the amount of *visible* information varied. Participants therefore faced genuine uncertainty about the outcome probability rather than a subjective estimate of a known distribution.
+
+The task was incentive-compatible: at session end, one trial was randomly selected and played out to determine a variable bonus (either the guaranteed $5 or the lottery outcome), ensuring participants were motivated to express their true preferences.
 
 <div style="text-align: center; margin: 2rem 0;">
   <img src="/assets/img/oud_task.png" alt="Risk and Ambiguity Task design showing trial structure" style="max-width: 95%; border: 1px solid #eee; padding: 8px;">
@@ -107,6 +110,11 @@ The null prediction of γ is, at face value, a null — but it may also point to
 
 This reading is supported by a growing reliability literature. Harlé et al. (2019) found that *variability* in decision-making parameters — not mean levels — predicted methamphetamine relapse. Karvelis et al. (2024) report ICCs below 0.5 for most computational measures, with state-like fluctuations dominating within-subject variance; Karvelis & Diaconescu (2025) show this creates a **reliability paradox** where genuine biomarkers appear uninformative because noise suppresses detectable group differences. Zorowitz & Niv (2023) identify poor test-retest reliability as a core driver of inconsistent replication. For a comprehensive treatment, see [Karvelis et al. (2023)](https://www.sciencedirect.com/science/article/pii/S0149763423001069).
 
+<div style="text-align: center; margin: 2rem 0;">
+  <img src="/assets/img/oud_reliability_stability.png" alt="Decomposition of test-retest reliability into measurement error and performance change components across time" style="max-width: 90%; border: 1px solid #eee; padding: 8px;">
+  <p style="font-size: 0.85em; color: #666; margin-top: 0.5rem;"><em>Figure 4.</em> Reliability and stability of computational measures. Test-retest reliability (y-axis) decomposes into fixed measurement error (task design, model fitting) and performance change components (practice effects, trait-like changes, and state-like changes). The large state-like fluctuation component (yellow) reflects transient within-person variation that reduces observed reliability — and attenuates apparent effect sizes — even when the underlying trait is stable. Reproduced from Karvelis et al. (2023).</p>
+</div>
+
 This opens a direct question: **does ambiguity tolerance show stable individual-difference structure when estimated from a neural rather than behavioural substrate?** The companion study addresses this using CPM in resting-state fMRI: [Whole-Brain Resting-State fMRI Prediction of Ambiguity Tolerance](/projects/4_project/).
 
 The missingness findings offer a methodological contribution: UTOX-positive sessions — the clinically most relevant — are also the most likely to be excluded, creating a systematic blind spot. **Missingness patterns carry clinical signal that complementary analyses can recover**, and dense-sampling designs should pre-register dropout as a co-primary outcome.
@@ -115,7 +123,7 @@ An emerging direction moves beyond single-parameter biomarker logic toward **com
 
 <div style="text-align: center; margin: 2rem 0;">
   <img src="/assets/img/oud_fingerprint_panel.png" alt="Computational snapshots over time: radar charts showing multi-parameter profiles across biotypes and timepoints" style="max-width: 95%; border: 1px solid #eee; padding: 8px;">
-  <p style="font-size: 0.85em; color: #666; margin-top: 0.5rem;"><em>Figure 4.</em> Computational snapshots over time. Each radar chart plots a multi-parameter computational profile at a given session; profiles evolve differently across biotypes and recovery trajectories. Reproduced from <a href="https://www.sciencedirect.com/science/article/pii/S2451902226000534"><em>Biological Psychiatry: CNNI</em> (2026)</a>.</p>
+  <p style="font-size: 0.85em; color: #666; margin-top: 0.5rem;"><em>Figure 5.</em> Computational snapshots over time across biotypes and recovery trajectories (Persons 1–4) and a healthy control. Each radar chart plots the joint multi-parameter computational profile at one session; the profile shape and size evolve distinctly depending on biotype and clinical trajectory. Reproduced from <a href="https://www.sciencedirect.com/science/article/pii/S2451902226000534"><em>Biological Psychiatry: CNNI</em> (2026)</a>.</p>
 </div>
 
 ---
