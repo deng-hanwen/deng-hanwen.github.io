@@ -76,7 +76,7 @@ Parameters were estimated per session via maximum likelihood estimation. Inclusi
 
 ## Key Findings
 
-### Clinical Predictors of Data Quality
+#### Clinical Predictors of Data Quality
 
 Session exclusion was not random: UTOX-positive sessions were **6.8× more likely** to be excluded, revealing that data quality itself indexes active substance use. This motivated two additional analyses: logistic regression identifying predictors of exclusion, and propensity score weighting to correct for the selection bias introduced by non-random dropout.
 
@@ -85,11 +85,11 @@ Session exclusion was not random: UTOX-positive sessions were **6.8× more likel
   <p style="font-size: 0.85em; color: #666; margin-top: 0.5rem;"><em>Figure 3.</em> Cliff's delta effect sizes for clinical variables comparing included versus excluded sessions (red = within-subject; blue = between-subject). Negative values indicate higher levels of a variable associated with session exclusion; positive values indicate protective effects. * <em>p</em> < .05, ** <em>p</em> < .01, *** <em>p</em> < .001.</p>
 </div>
 
-### Missingness as a Clinically Informative Endpoint
+#### Missingness as a Clinically Informative Endpoint
 
 Ambiguity tolerance (γ) did not predict subsequent opioid use at either temporal lag (t+1: β = 0.25, *p* = .946; t+2: β = −0.45, *p* = .935). While the primary hypothesis was not supported, predictors of UTOX positivity and predictors of session exclusion showed **distinct clinical profiles**, pointing to different pathways to clinical vulnerability and data quality failure.
 
-### Mediation: Clinical Vulnerability → UTOX → Dropout
+#### Mediation: Clinical Vulnerability → UTOX → Dropout
 
 Craving, sleep disturbance, and distress intolerance operated primarily through active substance use, consistent with drug-seeking behaviour disrupting study engagement. Cognitive ability and positive affect exerted **direct protective effects** on session completion, independent of UTOX status. Together, these findings argue that **missingness is a clinically informative endpoint** in dense-sampling designs, and that the distributional properties of retained data should not be assumed to represent the full clinical population.
 
