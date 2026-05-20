@@ -416,7 +416,7 @@ ninja.data = [{
               window.location.href = "/projects/1_project/";
             },},{id: "projects-neurobiological-markers-of-opioid-use-disorder",
           title: 'Neurobiological Markers of Opioid Use Disorder',
-          description: "Whole-brain functional connectivity analysis of OUD vs healthy controls using Network-Based Statistics across task and resting-state fMRI",
+          description: "Whole-brain Network-Based Statistics across reward and cognitive control fMRI tasks — probing the task-generality and clinical specificity of OUD functional connectivity",
           section: "Projects",handler: () => {
               window.location.href = "/projects/2_project/";
             },},{id: "projects-computational-markers-and-clinical-vulnerability-in-early-oud-treatment",
