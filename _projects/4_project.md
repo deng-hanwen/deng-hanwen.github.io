@@ -17,7 +17,7 @@ related_publications: false
 
 *Hanwen Deng, Francesca M. LoFaro, Steven Riley, Sarah W. Yip, Anna B. Konova*
 
-*Yale University & Rutgers University. Supervised by Dr Sarah Yip & Dr Anna Konova.*
+*Yale University & Rutgers University.*
 
 > **Note:** Accepted as Poster Presentation at the Computational Psychiatry Conference, 2026.
 
@@ -54,7 +54,7 @@ Choices were fitted with an expected utility model to extract three parameters p
 Model quality was assessed via *R*² ≥ 0.10 and parameter bound checks. The behavioural pattern across the sample is consistent with expected utility theory: lottery choice rates increase monotonically with probability in the risk context, and participants show systematic ambiguity aversion relative to the risk-neutral baseline (Figure 2).
 
 <div style="text-align: center; margin: 2rem 0;">
-  <img src="/assets/img/cpm_lsra_summary.png" alt="LSRA Choice Summary bar chart showing proportion lottery choices across risk and ambiguity conditions" style="max-width: 90%; border: 1px solid #eee; padding: 8px;">
+  <img src="/assets/img/cpm_lsra_summary.png" alt="LSRA Choice Summary bar chart showing proportion lottery choices across risk and ambiguity conditions" style="max-width: 55%; border: 1px solid #eee; padding: 8px;">
   <p style="font-size: 0.85em; color: #666; margin-top: 0.5rem;"><em>Figure 2.</em> LSRA Choice Summary (all included sessions). Blue bars: known-risk context. Red bars: ambiguity context. Green dashed line: risk-neutral prediction (0.630). Ambiguous lottery choice rates fall below the risk-neutral line after probability normalisation (Ambiguous risk-norm), confirming systematic ambiguity aversion at the group level.</p>
 </div>
 
@@ -62,9 +62,11 @@ Model quality was assessed via *R*² ≥ 0.10 and parameter bound checks. The be
 
 CPM (Finn et al., 2015; Shen et al., 2017) is a data-driven approach that uses whole-brain functional connectivity matrices to predict individual differences in behaviour. Rather than selecting regions of interest a priori, CPM identifies edges — pairwise correlations between brain nodes — whose strength across participants covaries with the behavioural target, then uses those edges to predict behaviour in held-out individuals.
 
-<div style="text-align: center; margin: 2rem 0;">
-  <img src="/assets/img/cpm_schematic.png" alt="Schematic diagram of CPM pipeline showing feature selection, edge summation, model fitting, and prediction" style="max-width: 95%; border: 1px solid #eee; padding: 8px;">
+<div style="display: flex; justify-content: center; margin: 2rem 0;">
+  <div style="text-align: center; max-width: 85%;">
+  <img src="/assets/img/cpm_schematic.png" alt="Schematic diagram of CPM pipeline showing feature selection, edge summation, model fitting, and prediction" style="width: 100%; border: 1px solid #eee; padding: 8px;">
   <p style="font-size: 0.85em; color: #666; margin-top: 0.5rem;"><em>Figure 3.</em> CPM pipeline. (A) Edges in each subject's FC matrix are correlated with the behavioural target across participants to select positive and negative predictive networks. (B) Selected edge weights are summed per subject into network strength scores. (C) A linear brain–behaviour model is fit on training data. (D) The model is applied to held-out subjects' FC matrices to generate behavioural predictions. Reproduced from Yip et al. (2019).</p>
+  </div>
 </div>
 
 The pipeline applied here:
@@ -81,13 +83,15 @@ CPM was applied to resting-state fMRI connectivity matrices derived from the **2
 
 ## Key Findings
 
-Resting-state FC did not significantly predict ambiguity tolerance, risk tolerance, or choice sensitivity under cross-validation. None of the CPM models achieved above-chance prediction accuracy.
+- **Null CPM result across all three parameters:** Resting-state FC did not significantly predict ambiguity tolerance (γ), risk tolerance (α), or choice sensitivity (β) under leave-one-out cross-validation. None of the models achieved above-chance prediction accuracy.
 
-This null is interpretable in the context of growing evidence that task engagement substantially reorganises functional connectivity, and that this task-induced reorganisation — not intrinsic resting architecture — may be what CPM requires to detect fine-grained individual differences in cognitive phenotypes. Greene et al. (2018) demonstrated directly that CPM models built from task-evoked FC explained over 20% of variance in fluid intelligence, compared to under 6% for resting-state models, attributing the gap to tasks amplifying the trait-relevant signal that is otherwise diluted by resting-state fluctuations. For decision-making under ambiguity specifically, the key neural circuitry — frontoparietal attention networks and medial prefrontal cortex — is transiently recruited in proportion to ambiguity level during active choice (Levy et al., 2010), meaning that individual differences in how strongly these circuits are engaged may only be measurable when the system is being used. Resting-state connectivity, by contrast, reflects an average across many functional states and may not isolate the ambiguity-relevant component of individual network architecture.
+- **Task engagement reorganises FC:** Growing evidence suggests that task-induced reorganisation of functional connectivity — not intrinsic resting architecture — is what CPM requires to detect individual differences in cognitive phenotypes. Greene et al. (2018) showed that task-evoked CPM models explained over 20% of variance in fluid intelligence vs. under 6% for resting-state models, as tasks amplify the trait-relevant signal otherwise diluted by resting fluctuations.
 
-**Task-based fMRI paradigms** that scan participants during active ambiguous decision-making are therefore a natural next step. That CPM has already demonstrated predictive success for decision-related outcomes in addiction contexts when applied to task-evoked connectivity (Yip et al., 2019) supports this direction.
+- **Ambiguity circuits are state-dependent:** The key neural circuitry for ambiguity processing — frontoparietal networks and medial prefrontal cortex — is transiently recruited in proportion to ambiguity level during active choice (Levy et al., 2010). Individual differences in recruitment may only be detectable when the system is engaged, not at rest.
 
-Taken together with the companion clinical study — where γ also failed to predict prospective drug use in an OUD sample — a coherent picture emerges: **ambiguity tolerance may be more state-dependent than a stable individual trait**, sensitive to task engagement and clinical context rather than reflecting fixed resting architecture. This has direct implications for the design of computational psychiatry studies that aim to use decision-making parameters as translational biomarkers.
+- **Task-based fMRI is the logical next step:** Paradigms that scan participants during active ambiguous decision-making are likely to offer greater predictive power. CPM has already demonstrated success for decision-related outcomes in addiction contexts when applied to task-evoked connectivity (Yip et al., 2019).
+
+- **Consistent with the companion clinical study:** Taken together with the OUD project — where γ also failed to predict prospective drug use — a coherent picture emerges: **ambiguity tolerance may be more state-dependent than a stable individual trait**, sensitive to task engagement and clinical context rather than reflecting fixed resting architecture.
 
 ---
 
