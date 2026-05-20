@@ -74,34 +74,22 @@ Parameters were estimated per session via maximum likelihood estimation. Inclusi
 
 ---
 
-## Clinical Predictors of Data Quality
+## Key Findings
+
+### Clinical Predictors of Data Quality
 
 Session exclusion was not random: UTOX-positive sessions were **6.8× more likely** to be excluded, revealing that data quality itself indexes active substance use. This motivated two additional analyses: logistic regression identifying predictors of exclusion, and propensity score weighting to correct for the selection bias introduced by non-random dropout.
 
 <div style="text-align: center; margin: 2rem 0;">
   <img src="/assets/img/oud_fig5_cliffs.png" alt="Cliff's delta bar chart comparing within-subject and between-subject effects" style="max-width: 85%; border: 1px solid #eee; padding: 8px;">
-  <p style="font-size: 0.85em; color: #666; margin-top: 0.5rem;"><em>Figure 4.</em> Cliff's delta effect sizes for clinical variables comparing included versus excluded sessions (red = within-subject; blue = between-subject). Negative values indicate higher levels of a variable associated with session exclusion; positive values indicate protective effects. * <em>p</em> < .05, ** <em>p</em> < .01, *** <em>p</em> < .001.</p>
+  <p style="font-size: 0.85em; color: #666; margin-top: 0.5rem;"><em>Figure 3.</em> Cliff's delta effect sizes for clinical variables comparing included versus excluded sessions (red = within-subject; blue = between-subject). Negative values indicate higher levels of a variable associated with session exclusion; positive values indicate protective effects. * <em>p</em> < .05, ** <em>p</em> < .01, *** <em>p</em> < .001.</p>
 </div>
-
----
-
-## Key Findings
 
 ### Missingness as a Clinically Informative Endpoint
 
 Ambiguity tolerance (γ) did not predict subsequent opioid use at either temporal lag (t+1: β = 0.25, *p* = .946; t+2: β = −0.45, *p* = .935). While the primary hypothesis was not supported, predictors of UTOX positivity and predictors of session exclusion showed **distinct clinical profiles**, pointing to different pathways to clinical vulnerability and data quality failure.
 
-<div style="text-align: center; margin: 2rem 0;">
-  <img src="/assets/img/oud_fig6_forest.png" alt="Forest plots of odds ratios for UTOX positivity and session exclusion" style="max-width: 85%; border: 1px solid #eee; padding: 8px;">
-  <p style="font-size: 0.85em; color: #666; margin-top: 0.5rem;"><em>Figure 5.</em> Forest plots of odds ratios (log₁₀ scale) for psychological factors associated with positive urine toxicology (blue, upper) and session exclusion (red, lower). Error bars represent 95% confidence intervals. * <em>p</em> ≤ .05, ** <em>p</em> ≤ .01. FDR-corrected.</p>
-</div>
-
 ### Mediation: Clinical Vulnerability → UTOX → Dropout
-
-<div style="text-align: center; margin: 2rem 0;">
-  <img src="/assets/img/oud_fig7_mediation.png" alt="Mediation analysis diagram showing paths through UTOX status" style="max-width: 85%; border: 1px solid #eee; padding: 8px;">
-  <p style="font-size: 0.85em; color: #666; margin-top: 0.5rem;"><em>Figure 6.</em> Mediation analysis: clinical factors → UTOX status (mediator) → session exclusion. Full mediation: anxiety, distress intolerance, craving, opioid withdrawal. Partial mediation: sleep disturbance (24% reduction via UTOX). No mediation: depression, positive affect, cognitive ability, negative affect (direct effects). Path coefficients shown with β and <em>p</em>-values.</p>
-</div>
 
 Craving, sleep disturbance, and distress intolerance operated primarily through active substance use, consistent with drug-seeking behaviour disrupting study engagement. Cognitive ability and positive affect exerted **direct protective effects** on session completion, independent of UTOX status. Together, these findings argue that **missingness is a clinically informative endpoint** in dense-sampling designs, and that the distributional properties of retained data should not be assumed to represent the full clinical population.
 
@@ -115,15 +103,20 @@ A secondary methodological contribution was the application of **inverse probabi
 
 ## Discussion
 
-The null prediction of γ is, at face value, a null — but it may also point toward something worth examining. Two interpretations are worth considering. First, ambiguity tolerance as measured by this paradigm may not reflect the particular decision-making vulnerability that drives relapse in early MOUD — the task was designed for a healthy population, and its sensitivity to individual differences in a clinically burdened, state-fluctuating sample may be attenuated. Second, and more fundamentally, γ may be **state-dependent**: estimated session-by-session from noisy behavioural data in individuals whose cognitive capacity and motivation fluctuate with withdrawal, craving, and sleep, it may capture transient state rather than stable trait. Under this interpretation, the null does not mean ambiguity tolerance is clinically irrelevant — it means the right measurement context has not yet been found.
+The null prediction of γ is, at face value, a null — but it may also point toward something worth examining. γ may be **state-dependent**: estimated from noisy behavioural data in individuals whose cognitive capacity fluctuates with withdrawal, craving, and sleep, it may capture transient state rather than stable trait. Under this interpretation, the null does not mean ambiguity tolerance is clinically irrelevant — it means the right measurement context has not yet been found.
 
-This interpretation is consistent with a growing body of evidence that clinical and environmental state substantially contaminates behavioural computational parameters. Reiter et al. (2019) demonstrated that social and contextual factors — in this case peer influence during risky choice — directly modulate reinforcement learning parameters in ways that are typically attributed to stable individual differences. In treatment populations specifically, Harlé et al. (2019) found that it was *variability* in decision-making parameters across sessions, not mean levels, that predicted methamphetamine relapse, suggesting that within-person fluctuation carries signal that cross-sectional approaches miss. The broader reliability literature is sobering: Karvelis et al. (2024) reported intraclass correlation coefficients below 0.5 for the majority of behavioural and computational measures across repeat sessions, with state-like within-subject fluctuations accounting for a substantial proportion of total variance. This psychometric challenge is compounded by what Karvelis & Diaconescu (2025) term the **reliability paradox**: poor measurement reliability systematically attenuates effect sizes and group differences, making genuine biomarkers appear clinically uninformative even when the underlying construct is valid. Zorowitz & Niv (2023) have argued that this problem — low test-retest reliability producing inconsistent cross-study replication — is among the most pressing unresolved issues in computational psychiatry. For a comprehensive roadmap of the psychometric and clinical translation challenges facing the field, see [Karvelis et al. (2023)](https://www.sciencedirect.com/science/article/pii/S0149763423001069).
+This reading is supported by a growing reliability literature. Harlé et al. (2019) found that *variability* in decision-making parameters — not mean levels — predicted methamphetamine relapse. Karvelis et al. (2024) report ICCs below 0.5 for most computational measures, with state-like fluctuations dominating within-subject variance; Karvelis & Diaconescu (2025) show this creates a **reliability paradox** where genuine biomarkers appear uninformative because noise suppresses detectable group differences. Zorowitz & Niv (2023) identify poor test-retest reliability as a core driver of inconsistent replication. For a comprehensive treatment, see [Karvelis et al. (2023)](https://www.sciencedirect.com/science/article/pii/S0149763423001069).
 
-This opens a direct question: **does ambiguity tolerance, when estimated from a neural rather than behavioural substrate, show the stable individual-difference structure that would make it a viable biomarker?** This is precisely what the companion study addresses using connectome-based predictive modelling (CPM) in a resting-state fMRI dataset: [Whole-Brain Resting-State fMRI Prediction of Ambiguity Tolerance](/projects/4_project/).
+This opens a direct question: **does ambiguity tolerance show stable individual-difference structure when estimated from a neural rather than behavioural substrate?** The companion study addresses this using CPM in resting-state fMRI: [Whole-Brain Resting-State fMRI Prediction of Ambiguity Tolerance](/projects/4_project/).
 
-The missingness finding adds a second, methodological contribution. Dense-sampling designs in treatment contexts carry an underappreciated assumption: that participants who complete sessions are representative of the broader clinical population. The present results show they are not. UTOX-positive sessions — the sessions most likely to capture the clinically relevant states of active relapse — are precisely the sessions most likely to be lost to exclusion. There is a broader structural tension here: the populations of greatest clinical interest may be exactly those least suited to complete research protocols, introducing a systematic gap between studied and target populations. The laboratory-to-clinic translation problem compounds this: Buelow et al. (2024) showed that intact laboratory task performance can coexist with significant real-world functional impairment, raising questions about whether paradigms developed in controlled settings capture ecologically valid behaviour. Together, these findings argue that our models are fitted on data from participants who are, on balance, doing relatively well. **Missingness patterns carry clinical signal that complementary analyses can recover**, and future trials using dense behavioural paradigms should pre-register dropout as a co-primary outcome alongside the computational parameters themselves.
+The missingness findings offer a methodological contribution: UTOX-positive sessions — the clinically most relevant — are also the most likely to be excluded, creating a systematic blind spot. **Missingness patterns carry clinical signal that complementary analyses can recover**, and dense-sampling designs should pre-register dropout as a co-primary outcome.
 
-A complementary direction for future work concerns the unit of analysis itself. The present study — like most in the field — extracts a small number of scalar parameters and tests each as a standalone predictor. An emerging alternative is to treat the full multi-parameter profile as a **computational fingerprint**: rather than asking whether γ alone predicts outcome, one asks whether the joint configuration of α, γ, and μ — combined with session-level clinical variables — uniquely characterises each individual's decision-making profile in a way that tracks clinical change. [This framing](https://www.sciencedirect.com/science/article/pii/S2451902226000534) moves computational psychiatry away from single-biomarker logic and toward a richer, person-centred representation of cognitive vulnerability.
+An emerging direction moves beyond single-parameter biomarker logic toward **computational fingerprints** — treating the joint profile of α, γ, and μ across sessions as a multi-dimensional signature of each person's decision-making phenotype. [This framing](https://www.sciencedirect.com/science/article/pii/S2451902226000534) is illustrated below: computational snapshots evolve differently across biotypes and recovery trajectories, offering a richer, person-centred view of clinical change than any single parameter can provide.
+
+<div style="text-align: center; margin: 2rem 0;">
+  <img src="/assets/img/oud_fingerprint_panel.png" alt="Computational snapshots over time: radar charts showing multi-parameter profiles across biotypes and timepoints" style="max-width: 95%; border: 1px solid #eee; padding: 8px;">
+  <p style="font-size: 0.85em; color: #666; margin-top: 0.5rem;"><em>Figure 4.</em> Computational snapshots over time. Each radar chart plots a multi-parameter computational profile at a given session; profiles evolve differently across biotypes and recovery trajectories. Reproduced from <a href="https://www.sciencedirect.com/science/article/pii/S2451902226000534"><em>Biological Psychiatry: CNNI</em> (2026)</a>.</p>
+</div>
 
 ---
 
