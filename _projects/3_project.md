@@ -50,16 +50,14 @@ Participants completed a 120-trial decision-making task (Konova et al., 2020) pr
 
 ---
 
-## Computational Model
+## Expected Utility Model
 
 Choices were modelled using an **expected utility framework** adapted from Konova et al. (2020), with three free parameters:
 
 <div style="text-align: center; margin: 2rem 0;">
-  <img src="/assets/img/oud_model.png" alt="Computational model: utility equation and probabilistic choice rule" style="max-width: 90%; border: 1px solid #eee; padding: 8px;">
-  <p style="font-size: 0.85em; color: #666; margin-top: 0.5rem;"><em>Figure 3.</em> Computational model. Top: utility equation for the lottery option, where <em>p</em> is the known risk probability, <em>β</em> scales the ambiguity adjustment (higher β = greater ambiguity aversion), <em>A</em> is ambiguity level, and α is the risk tolerance (curvature of the utility function). Bottom: softmax decision rule. Reproduced from Konova et al. (2020).</p>
+  <img src="/assets/img/oud_model.png" alt="Expected utility model: utility equation and probabilistic choice rule" style="max-width: 90%; border: 1px solid #eee; padding: 8px;">
+  <p style="font-size: 0.85em; color: #666; margin-top: 0.5rem;"><em>Figure 3.</em> Expected utility model. Top: utility equation for the lottery option, where <em>p</em> is the known risk probability, <em>β</em> scales the ambiguity adjustment (higher β = greater ambiguity aversion), <em>A</em> is ambiguity level, and α is the risk tolerance (curvature of the utility function). Bottom: softmax decision rule. Reproduced from Konova et al. (2020).</p>
 </div>
-
-The three free parameters are:
 
 | Parameter | Name | Interpretation |
 |-----------|------|----------------|
@@ -71,65 +69,57 @@ Parameters were estimated per session via maximum likelihood estimation. Inclusi
 
 ---
 
-## Data Quality and Missingness
+## Clinical Predictors of Data Quality
 
-### Session Inclusion Heatmap
-
-<div style="text-align: center; margin: 2rem 0;">
-  <img src="/assets/img/oud_fig2_inclusion.png" alt="Session inclusion heatmap: blue=included, red=excluded, grey=missing" style="max-width: 80%; border: 1px solid #eee; padding: 8px;">
-  <p style="font-size: 0.85em; color: #666; margin-top: 0.5rem;"><em>Figure 4.</em> Participant session inclusion status across the 8-week protocol. Blue cells (✓) indicate sessions included in analysis; red cells (✗) indicate sessions excluded due to poor behavioural quality (R² < 0.10 or parameter bounds violations); grey cells indicate missing sessions.</p>
-</div>
-
-Exclusion was not random: UTOX-positive sessions were **6.8× more likely** to be excluded, revealing that data quality itself indexes active substance use. This motivated two additional analyses beyond the primary research question.
-
-### Clinical Predictors of Data Quality
+Session exclusion was not random: UTOX-positive sessions were **6.8× more likely** to be excluded, revealing that data quality itself indexes active substance use. This motivated two additional analyses: logistic regression identifying predictors of exclusion, and propensity score weighting to correct for the selection bias introduced by non-random dropout.
 
 <div style="text-align: center; margin: 2rem 0;">
   <img src="/assets/img/oud_fig5_cliffs.png" alt="Cliff's delta bar chart comparing within-subject and between-subject effects" style="max-width: 85%; border: 1px solid #eee; padding: 8px;">
-  <p style="font-size: 0.85em; color: #666; margin-top: 0.5rem;"><em>Figure 5.</em> Cliff's delta effect sizes for clinical variables comparing sessions included versus excluded from analysis (red = within-subject; blue = between-subject). Negative values indicate higher levels associated with exclusion; positive values indicate protective effects. * <em>p</em> < .05, ** <em>p</em> < .01, *** <em>p</em> < .001.</p>
+  <p style="font-size: 0.85em; color: #666; margin-top: 0.5rem;"><em>Figure 4.</em> Cliff's delta effect sizes for clinical variables comparing included versus excluded sessions (red = within-subject; blue = between-subject). Negative values indicate higher levels of a variable associated with session exclusion; positive values indicate protective effects. * <em>p</em> < .05, ** <em>p</em> < .01, *** <em>p</em> < .001.</p>
 </div>
 
 ---
 
 ## Key Findings
 
-### Primary Result: Null Prediction of Ambiguity Tolerance
-
-Ambiguity tolerance (γ) did not predict subsequent opioid use at either temporal lag (t+1: β = 0.25, *p* = .946; t+2: β = −0.45, *p* = .935). Adding γ to clinical covariate models did not improve fit, suggesting this parameter does not carry prospective clinical signal at the individual level in this sample.
-
 ### Missingness as a Clinically Informative Endpoint
 
-Session exclusions were systematically associated with active substance use, elevated craving, sleep disturbance, and distress intolerance. Critically, predictors of UTOX positivity and predictors of exclusion showed **distinct clinical profiles** — pointing to different pathways to vulnerability and data quality failure.
+Ambiguity tolerance (γ) did not predict subsequent opioid use at either temporal lag (t+1: β = 0.25, *p* = .946; t+2: β = −0.45, *p* = .935). While the primary hypothesis was not supported, predictors of UTOX positivity and predictors of session exclusion showed **distinct clinical profiles**, pointing to different pathways to clinical vulnerability and data quality failure.
 
 <div style="text-align: center; margin: 2rem 0;">
   <img src="/assets/img/oud_fig6_forest.png" alt="Forest plots of odds ratios for UTOX positivity and session exclusion" style="max-width: 85%; border: 1px solid #eee; padding: 8px;">
-  <p style="font-size: 0.85em; color: #666; margin-top: 0.5rem;"><em>Figure 6.</em> Forest plots of odds ratios (log₁₀ scale) for psychological factors associated with positive urine toxicology (blue, upper) and session exclusion (red, lower). Error bars represent 95% confidence intervals. * <em>p</em> ≤ .05, ** <em>p</em> ≤ .01. FDR-corrected.</p>
+  <p style="font-size: 0.85em; color: #666; margin-top: 0.5rem;"><em>Figure 5.</em> Forest plots of odds ratios (log₁₀ scale) for psychological factors associated with positive urine toxicology (blue, upper) and session exclusion (red, lower). Error bars represent 95% confidence intervals. * <em>p</em> ≤ .05, ** <em>p</em> ≤ .01. FDR-corrected.</p>
 </div>
 
 ### Mediation: Clinical Vulnerability → UTOX → Dropout
 
 <div style="text-align: center; margin: 2rem 0;">
   <img src="/assets/img/oud_fig7_mediation.png" alt="Mediation analysis diagram showing paths through UTOX status" style="max-width: 85%; border: 1px solid #eee; padding: 8px;">
-  <p style="font-size: 0.85em; color: #666; margin-top: 0.5rem;"><em>Figure 7.</em> Mediation analysis: clinical factors → UTOX status (mediator) → session exclusion. Full mediation: anxiety, distress intolerance, craving, opioid withdrawal (effects fully explained by UTOX). Partial mediation: sleep disturbance (24% of effect through UTOX). No mediation: depression, positive affect, cognitive ability, negative affect (direct effects on session exclusion). Path coefficients shown with β and <em>p</em>-values.</p>
+  <p style="font-size: 0.85em; color: #666; margin-top: 0.5rem;"><em>Figure 6.</em> Mediation analysis: clinical factors → UTOX status (mediator) → session exclusion. Full mediation: anxiety, distress intolerance, craving, opioid withdrawal. Partial mediation: sleep disturbance (24% reduction via UTOX). No mediation: depression, positive affect, cognitive ability, negative affect (direct effects). Path coefficients shown with β and <em>p</em>-values.</p>
 </div>
 
-Craving, sleep disturbance, and distress intolerance operated primarily through active substance use, consistent with drug-seeking behaviour disrupting study engagement. Cognitive ability and positive affect exerted **direct protective effects** on session completion, independent of UTOX status.
-
-Together, these findings argue that **missingness is a clinically informative endpoint** in dense-sampling designs, and that the distributional properties of retained data should not be assumed to represent the full clinical population.
+Craving, sleep disturbance, and distress intolerance operated primarily through active substance use, consistent with drug-seeking behaviour disrupting study engagement. Cognitive ability and positive affect exerted **direct protective effects** on session completion, independent of UTOX status. Together, these findings argue that **missingness is a clinically informative endpoint** in dense-sampling designs, and that the distributional properties of retained data should not be assumed to represent the full clinical population.
 
 ---
 
 ## Propensity Score Correction
 
-A secondary methodological contribution was the application of **inverse probability weighting (IPW)** to correct for the selection bias introduced by non-random session exclusion. Retained sessions were reweighted based on the predicted probability of exclusion from clinical covariates, adjusting the analysis sample to better approximate the full clinical distribution.
-
-The null finding for γ persisted after IPW correction, strengthening the conclusion that ambiguity tolerance does not prospectively predict opioid use in this sample — rather than the null being an artefact of selective attrition.
+A secondary methodological contribution was the application of **inverse probability weighting (IPW)** to correct for the selection bias introduced by non-random session exclusion. Retained sessions were reweighted based on the predicted probability of exclusion from clinical covariates, adjusting the analysis sample to better approximate the full clinical distribution. The null finding for γ persisted after IPW correction, ruling out selective attrition as an explanation.
 
 ---
 
 ## Discussion
 
-The null prediction of γ on opioid use raises a deeper question: does ambiguity tolerance, as extracted from this paradigm, reflect a **stable individual trait with a neural substrate** — or is it more state-dependent, varying with clinical context? This question is directly addressed in a companion study using connectome-based predictive modelling in a healthy sample: [Whole-Brain Resting-State fMRI Prediction of Ambiguity Tolerance](/projects/4_project/).
+<div style="text-align: center; margin: 2rem 0;">
+  <img src="/assets/img/oud_discussion_framework.png" alt="Conceptual framework interpreting the null finding and missingness" style="max-width: 98%; border: 1px solid #eee; padding: 8px;">
+  <p style="font-size: 0.85em; color: #666; margin-top: 0.5rem;"><em>Figure 7.</em> Conceptual framework summarising the two-pronged interpretation of study findings. Left branch: the null prediction of γ, confirmed robust to attrition bias by IPW correction, raises a fundamental question about parameter interpretability. Right branch: non-random session exclusion as a clinical endpoint in its own right, mediated through active substance use.</p>
+</div>
+
+The null prediction of γ is not merely a negative result — it is a theoretically informative one. Two interpretations are possible. First, ambiguity tolerance as measured by this paradigm may not reflect the particular decision-making vulnerability that drives relapse in early MOUD — the task was designed for a healthy population, and its sensitivity to individual differences in a clinically burdened, state-fluctuating sample may be attenuated. Second, and more fundamentally, γ may be **state-dependent**: estimated session-by-session from noisy behavioural data in individuals whose cognitive capacity and motivation fluctuate with withdrawal, craving, and sleep, it may capture transient state rather than stable trait. Under this interpretation, the null does not mean ambiguity tolerance is clinically irrelevant — it means the right measurement context has not yet been found.
+
+The IPW-corrected null strengthens this interpretation: it rules out attrition bias as a confound, making state-dependent noise the more parsimonious explanation. This opens a direct question: **does ambiguity tolerance, when estimated from a neural rather than behavioural substrate, show the stable individual-difference structure that would make it a viable biomarker?** This is precisely what the companion study addresses using connectome-based predictive modelling (CPM) in a resting-state fMRI dataset: [Whole-Brain Resting-State fMRI Prediction of Ambiguity Tolerance](/projects/4_project/).
+
+The missingness finding adds a second, methodological contribution. Dense-sampling designs in treatment contexts carry an underappreciated assumption: that participants who complete sessions are representative of the broader clinical population. The present results show they are not. UTOX-positive sessions — the sessions most likely to capture the clinically relevant states of active relapse — are precisely the sessions most likely to be lost to exclusion. This creates a systematic blind spot: our models are fitted on data from participants who are, on balance, doing relatively well. **Missingness patterns carry clinical signal that complementary analyses can recover**, and future trials using dense behavioural paradigms should pre-register dropout as a co-primary outcome alongside the computational parameters themselves.
 
 ---
 
