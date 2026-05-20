@@ -62,11 +62,9 @@ Model quality was assessed via *R*² ≥ 0.10 and parameter bound checks. The be
 
 CPM (Finn et al., 2015; Shen et al., 2017) is a data-driven approach that uses whole-brain functional connectivity matrices to predict individual differences in behaviour. Rather than selecting regions of interest a priori, CPM identifies edges — pairwise correlations between brain nodes — whose strength across participants covaries with the behavioural target, then uses those edges to predict behaviour in held-out individuals.
 
-<div style="display: flex; justify-content: center; margin: 2rem 0;">
-  <div style="text-align: center; max-width: 85%;">
-  <img src="/assets/img/cpm_schematic.png" alt="Schematic diagram of CPM pipeline showing feature selection, edge summation, model fitting, and prediction" style="width: 100%; border: 1px solid #eee; padding: 8px;">
+<div style="text-align: center; margin: 2rem 0;">
+  <img src="/assets/img/cpm_schematic.png" alt="Schematic diagram of CPM pipeline showing feature selection, edge summation, model fitting, and prediction" style="max-width: 95%; border: 1px solid #eee; padding: 8px;">
   <p style="font-size: 0.85em; color: #666; margin-top: 0.5rem;"><em>Figure 3.</em> CPM pipeline. (A) Edges in each subject's FC matrix are correlated with the behavioural target across participants to select positive and negative predictive networks. (B) Selected edge weights are summed per subject into network strength scores. (C) A linear brain–behaviour model is fit on training data. (D) The model is applied to held-out subjects' FC matrices to generate behavioural predictions. Reproduced from Yip et al. (2019).</p>
-  </div>
 </div>
 
 The pipeline applied here:
