@@ -8,7 +8,7 @@ category: Psychometric and Clinical Audit
 related_publications: false
 ---
 
-*Collaborative work with [The CORE Data Lab](https://www.thecoredatalab.com/), University of Edinburgh. PI: Dr Rob Sanders.*
+*Collaborative work with the [CORE Data Lab](https://www.thecoredatalab.com/), UCL Centre for Outcomes Research and Effectiveness. PI: Prof Rob Saunders.*
 
 <p>
   <a href="https://github.com/deng-hanwen/COVID_AES_wellbeing" class="btn btn-sm z-depth-0" role="button" style="background-color: #424242; color: white; margin-right: 6px;">
