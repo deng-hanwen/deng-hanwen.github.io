@@ -92,11 +92,11 @@ Putnick, D. L., & Bornstein, M. H. (2016). Measurement invariance conventions an
 
 *2023 intake cohort, N = 1,140 applicants. 6.9% overall acceptance rate.*
 
-The Doctorate in Clinical Psychology (DClinPsy) is the primary route to registration as a clinical psychologist in the UK. This project examined whether acceptance and rejection rates in the 2023 intake differed systematically across age, gender, ethnicity, disability, and sexual orientation, using **logistic regression** and **Fisher's exact tests**.
+The Doctorate in Clinical Psychology (DClinPsy) is the primary route to registration as a clinical psychologist in the UK. This project was conducted in collaboration with a London university as part of an internal equity and diversity audit, with the analysis intended for inclusion in the programme's formal diversity report. It examined whether acceptance rates in the 2023 intake differed systematically across age, gender, ethnicity, disability, and sexual orientation, using **logistic regression** and **Fisher's exact tests**.
 
 <div style="text-align: center; margin: 2rem 0;">
-  <img src="/assets/img/rob_dclinpsy_eth.png" alt="Bar chart of DClinPsy acceptance rates by ethnic group, 2023 intake" style="max-width: 70%; border: 1px solid #eee; padding: 8px;">
-  <p style="font-size: 0.85em; color: #666; margin-top: 0.5rem;"><em>Figure 3.</em> Acceptance rates by ethnic group (2023 intake). No group differences were statistically significant. The overall acceptance rate of 6.9% creates severe base-rate constraints on statistical power within subgroups.</p>
+  <img src="/assets/img/rob_dclinpsy_eth.png" alt="Bar chart of DClinPsy acceptance rates by ethnic group, 2023 intake" style="max-width: 55%; border: 1px solid #eee; padding: 8px;">
+  <p style="font-size: 0.85em; color: #666; margin-top: 0.5rem;"><em>Figure 3.</em> Acceptance rates by ethnic group (2023 intake). The dashed line indicates the overall acceptance rate (6.9%). No between-group differences were statistically significant.</p>
 </div>
 
 Acceptance rates were broadly similar across demographic groups. The only statistically significant predictor in the **logistic regression** was applicants aged 45–49 (OR ≈ 7.2, *p* = .013). No ethnic, disability, or sexual orientation group differences were significant.
