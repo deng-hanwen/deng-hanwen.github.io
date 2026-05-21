@@ -3,6 +3,7 @@
 # -----------------------------------------------------------------------------
 
 title: blank # the website title (if blank, full name will be used instead)
+github_username: deng-hanwen # used by the repositories page
 first_name: Hanwen
 middle_name:
 last_name: Deng

@@ -5,8 +5,3 @@ repo_description_lines_max: 2
 
 github_repos:
   - deng-hanwen/BrainStateDx-NBS
-  - deng-hanwen/COVID_AES_wellbeing
-  - deng-hanwen/HAS_UK_validation
-  - deng-hanwen/Dclinpsy_diversity
-  - deng-hanwen/OUD_ambiguity_tolerance
-  - deng-hanwen/RiskBehavior_controlCPM
