@@ -431,7 +431,7 @@ ninja.data = [{
               window.location.href = "/projects/4_project/";
             },},{id: "projects-applied-psychometrics-and-clinical-audit",
           title: 'Applied Psychometrics and Clinical Audit',
-          description: "Three collaborative projects in scale validation, cross-national survey analysis, and admissions equity — with reflections on what the null results reveal about design",
+          description: "Three applied quantitative collaborations — scale validation, cross-national survey analysis, and admissions audit — spanning CFA, multilevel SEM, measurement invariance, and logistic regression",
           section: "Projects",handler: () => {
               window.location.href = "/projects/5_project/";
             },},{id: "projects-project-6",
