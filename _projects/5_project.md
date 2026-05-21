@@ -26,7 +26,9 @@ related_publications: false
 
 ## Overview
 
-These three projects sit outside my primary research programme in computational psychiatry and neuroimaging. They are applied quantitative collaborations — secondary analyses and clinical audits where the main contribution was statistical modelling in R. The methods across all three draw from the same toolkit: **confirmatory factor analysis (CFA)**, **structural equation modelling (SEM)**, **logistic regression**, and **measurement invariance testing**.
+These three projects sit outside my primary research programme in computational psychiatry and neuroimaging. They are applied quantitative collaborations — secondary analyses and clinical audits where the main contribution was statistical modelling in R.
+
+The methods across all three draw from the same toolkit: **confirmatory factor analysis (CFA)**, **structural equation modelling (SEM)**, **logistic regression**, and **measurement invariance testing**.
 
 Across these projects, the practical value was in building fluency with the full pipeline of applied quantitative research in clinical psychology — from construct operationalisation through model selection to result interpretation. Working across an EFA-to-CFA validation programme, a two-level SEM with cross-cultural data, and a logistic regression audit exposed a set of conceptual tensions that are central to psychometrics more broadly: that measurement validity presupposes construct clarity; that cross-group comparison requires demonstrating, not assuming, measurement equivalence; that multilevel data structures create inferential constraints that cannot be resolved by model complexity alone; and that statistical power in rare-outcome clinical datasets needs to be scoped to the base rate before any analysis begins. These are not incidental difficulties — they are structural features of applied measurement that have directly shaped how I approach construct validity and latent variable modelling in my primary research programme.
 
