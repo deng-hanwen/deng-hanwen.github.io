@@ -429,9 +429,9 @@ ninja.data = [{
           description: "Connectome-based predictive modelling of resting-state functional connectivity as a predictor of individual differences in ambiguity tolerance",
           section: "Projects",handler: () => {
               window.location.href = "/projects/4_project/";
-            },},{id: "projects-project-5",
-          title: 'project 5',
-          description: "a project with a background image",
+            },},{id: "projects-applied-psychometrics-and-clinical-audit",
+          title: 'Applied Psychometrics and Clinical Audit',
+          description: "Three collaborative projects in scale validation, cross-national survey analysis, and admissions equity — with reflections on what the null results reveal about design",
           section: "Projects",handler: () => {
               window.location.href = "/projects/5_project/";
             },},{id: "projects-project-6",
