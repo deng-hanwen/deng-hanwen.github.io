@@ -15,7 +15,7 @@ related_publications: false
   </a>
 </p>
 
-*Yale University. Dr Sarah Yip.*
+*Yale University. PI: Dr Sarah Yip. Dataset and foundational CPM analyses: Dr Sarah Lichenstein.*
 
 > **Note:** This project is ongoing and currently in preparation. Specific results are not reported here.
 
