@@ -50,11 +50,6 @@ CFA was conducted using the WLSMV estimator in `lavaan` with ordered polytomous 
 
 This project examined how individuals' perceptions of COVID-19 lockdown policies related to psychological distress across 10 countries. The Autonomy Experience Scale (AES) captured three dimensions: Perceived Coercion (PC), Perceived Pressure (PP), and Procedural Justice (PJ). Outcomes were depression, anxiety, and stress (DASS-21). A two-level SEM (individual within country) tested whether AES components predicted distress via maladaptive coping, and whether between-country differences in AES scores could be explained by demographic aggregates, GDP, or lockdown stringency.
 
-<div style="text-align: center; margin: 2rem 0;">
-  <img src="/assets/img/rob_sem_path.png" alt="Two-level SEM path diagram: AES constructs through maladaptive coping to DASS depression and anxiety" style="max-width: 78%; border: 1px solid #eee; padding: 8px;">
-  <p style="font-size: 0.85em; color: #666; margin-top: 0.5rem;"><em>Figure 1.</em> Two-level SEM. Within-country paths (Level 1): PP and PJ predicted maladaptive coping, which strongly predicted depression (β = .49) and anxiety (β = .45). Between-country paths (Level 2) were inconsistent in direction, and the dominant source of between-country variance in AES scores remained unexplained by GDP or lockdown stringency.</p>
-</div>
-
 Within-country paths replicated sensibly across the full sample and a UK subsample. The between-country model was more complex: Perceived Coercion was negatively associated with coping between countries — opposite to the within-country direction — and the dominant source of country-level variance in AES scores remained unexplained.
 
 **Reflection.** With only 10 countries, the Level 2 model was severely underpowered and underspecified from the outset. GDP and lockdown stringency capture little of what actually differs across countries in lockdown experience: government trust, prior experience of state authority, cultural norms around collective obligation, and specific policy communication were all unmeasured. A meaningful cross-national design would need to measure theoretically motivated country-level predictors directly, or restrict inference to within-country variation. The cross-level reversal in the PC coefficient is a textbook Simpson's paradox case — not a substantive finding, but a signal that the Level 2 model is missing key confounders.
@@ -69,7 +64,7 @@ The Doctorate in Clinical Psychology (DClinPsy) is the primary route to registra
 
 <div style="text-align: center; margin: 2rem 0;">
   <img src="/assets/img/rob_dclinpsy_eth.png" alt="Bar chart of DClinPsy acceptance rates by ethnic group, 2023 intake" style="max-width: 70%; border: 1px solid #eee; padding: 8px;">
-  <p style="font-size: 0.85em; color: #666; margin-top: 0.5rem;"><em>Figure 2.</em> Acceptance rates by ethnic group (2023 intake). No group differences reached significance (Fisher's exact, p = .320). The overall rate of 6.9% creates severe base-rate constraints on statistical power within subgroups.</p>
+  <p style="font-size: 0.85em; color: #666; margin-top: 0.5rem;"><em>Figure 1.</em> Acceptance rates by ethnic group (2023 intake). No group differences reached significance (Fisher's exact, p = .320). The overall rate of 6.9% creates severe base-rate constraints on statistical power within subgroups.</p>
 </div>
 
 Acceptance rates were broadly similar across groups. The only statistically significant predictor in the logistic regression was applicants aged 45–49 (OR ≈ 7.2, *p* = .013). No ethnic, disability, or sexual orientation group differences were significant.
