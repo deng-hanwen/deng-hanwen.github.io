@@ -64,18 +64,13 @@ Participants were classified as **responders** (no opioid-positive urine screens
 
 ### OUD–HC differences are large-scale and robust across tasks
 
-The per-task analyses identified large, highly significant OUD–HC differences in both directions:
-
-- **MID:** OUD > HC: 175 edges (*p* < 0.0001); HC > OUD: 84 edges (*p* = 0.0016)
-- **Stroop:** OUD > HC: 184 edges (*p* < 0.0001); HC > OUD: 230 edges (*p* < 0.0001)
-
-Averaging matrices across tasks yielded the most sensitive result: **242 OUD > HC edges** and **237 HC > OUD edges** (both *p* < 0.0002, single components). The Dx × Task interaction was non-significant (*p* = 0.069), confirming that OUD-associated connectivity alterations do not depend on task context. The 27 OUD > HC and 28 HC > OUD conjunction edges (surviving NBS in **both** tasks independently) overlapped 100% with the averaged network, validating cross-task replication in the most conservative sense.
+Both per-task analyses (MID and Stroop) identified large-scale OUD–HC differences in both directions — OUD > HC and HC > OUD — constituting single connected components spanning the majority of the connectome. Averaging matrices across tasks yielded the most sensitive result. The Dx × Task interaction was non-significant, confirming that OUD-associated connectivity alterations do not depend on task context. A conjunction analysis — retaining only edges surviving NBS independently in **both** tasks — produced a conservative, replication-validated subset that overlapped substantially with the averaged network.
 
 ### Network anatomy
 
-The **OUD > HC** network is dominated by subcortical-cortical hyperconnectivity. The highest-degree hub is a right subcortical node (degree 58), with the densest connections spanning frontoparietal–motor (FP↔Mot), frontoparietal–subcortical (FP↔SC), and subcortical–visual association (SC↔VAs) circuits.
+The **OUD > HC** network is dominated by subcortical-cortical hyperconnectivity, centred on a right subcortical hub node with dense connections spanning frontoparietal–motor (FP↔Mot), frontoparietal–subcortical (FP↔SC), and subcortical–visual association (SC↔VAs) circuits.
 
-The **HC > OUD** network is characterised by motor and cerebellar connectivity, with the top hub in the left cerebellum (degree 24) and the leading pairs within-motor (Mot↔Mot), cerebellar–motor (CBL↔Mot), and motor–subcortical (Mot↔SC).
+The **HC > OUD** network is characterised by motor and cerebellar connectivity, with the top hub in the left cerebellum and leading connections within-motor (Mot↔Mot), cerebellar–motor (CBL↔Mot), and motor–subcortical (Mot↔SC).
 
 ### FC differences are state-general
 
@@ -88,7 +83,7 @@ The OUD–HC group difference at MID-identified edges is fully preserved during 
 
 ### Diagnostic networks do not predict treatment response
 
-Despite their robustness, these diagnostic networks showed **no significant association with treatment response** (all *p* = 0.22–0.98). Strikingly, the direction was *opposite* to what a normalisation hypothesis would predict: responders sat *further* from healthy controls than non-responders at every edge set. Both OUD subgroups remained far from healthy connectivity levels.
+Despite their robustness, these diagnostic networks showed **no significant association with treatment response**. Strikingly, the direction was *opposite* to what a normalisation hypothesis would predict: responders sat *further* from healthy controls than non-responders at every edge set. Both OUD subgroups remained far from healthy connectivity levels.
 
 ---
 
@@ -103,8 +98,10 @@ The figures below capture both sides of this dissociation: the left shows that n
 <div style="text-align: center; margin: 2rem 0;">
   <div style="display: inline-flex; gap: 2rem; justify-content: center; align-items: flex-start; flex-wrap: wrap;">
     <div style="max-width: 340px;">
-      <img src="/assets/img/nbs_lich_fig3c.png" alt="Lichenstein 2021 Figure 3C: opioid abstinence network strength by treatment group" style="width: 100%; border: 1px solid #eee; padding: 6px;">
-      <p style="font-size: 0.82em; color: #666; margin-top: 0.4rem; text-align: left;"><strong>Treatment-predictive network</strong> (Lichenstein et al., 2021). Opioid abstinence network strength (y-axis) is highest in responders, intermediate in healthy controls, and lowest in non-responders. The network tracks recovery.</p>
+      <a href="https://doi.org/10.1038/s41380-019-0586-y" target="_blank" rel="noopener">
+        <img src="/assets/img/nbs_lich_fig3c.png" alt="Lichenstein 2021 Figure 3C: opioid abstinence network strength by treatment group" style="width: 100%; border: 1px solid #eee; padding: 6px;">
+      </a>
+      <p style="font-size: 0.82em; color: #666; margin-top: 0.4rem; text-align: left;"><strong>Treatment-predictive network</strong> (Lichenstein et al., 2021; click to open paper). Opioid abstinence network strength (y-axis) is highest in responders, intermediate in healthy controls, and lowest in non-responders. The network tracks recovery.</p>
     </div>
     <div style="max-width: 500px;">
       <img src="/assets/img/nbs_analysis12.png" alt="Analysis 12: diagnostic NBS network strength by treatment group, showing no separation" style="width: 100%; border: 1px solid #eee; padding: 6px;">
