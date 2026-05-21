@@ -101,8 +101,6 @@ The Doctorate in Clinical Psychology (DClinPsy) is the primary route to registra
 
 Acceptance rates were broadly similar across demographic groups. The only statistically significant predictor in the **logistic regression** was applicants aged 45–49 (OR ≈ 7.2, *p* = .013). No ethnic, disability, or sexual orientation group differences were significant.
 
-**Reflection.** With a 7% overall acceptance rate, most demographic subgroups had too few acceptances to detect anything but very large effects — the study was structurally underpowered for its question. The null result is therefore not interpretable as evidence of equity. A more informative design would track acceptance patterns longitudinally across multiple intake cohorts to detect drift, and pre-specify the minimum detectable effect size at each subgroup's base rate before data collection. A single cross-sectional snapshot of a small intake cohort cannot meaningfully address a fairness question.
-
 ---
 
 ## Code
