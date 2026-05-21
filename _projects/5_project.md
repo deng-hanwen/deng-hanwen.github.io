@@ -1,80 +1,91 @@
 ---
 layout: page
-title: project 5
-description: a project with a background image
-img: assets/img/1.jpg
-importance: 3
-category: fun
+title: Applied Psychometrics and Clinical Audit
+description: Three collaborative projects in scale validation, cross-national survey analysis, and admissions equity — with reflections on what the null results reveal about design
+img: assets/img/rob_thumb.png
+importance: 1
+category: Psychometric and Clinical Audit
+related_publications: false
 ---
 
-Every project has a beautiful feature showcase page.
-It's easy to include images in a flexible 3-column grid format.
-Make your photos 1/3, 2/3, or full width.
+*Collaborative work with [The CORE Data Lab](https://www.thecoredatalab.com/), University of Edinburgh. PI: Dr Rob Sanders.*
 
-To give your project a background in the portfolio page, just add the img tag to the front matter like so:
+<p>
+  <a href="https://github.com/deng-hanwen/COVID_AES_wellbeing" class="btn btn-sm z-depth-0" role="button" style="background-color: #424242; color: white; margin-right: 6px;">
+    <i class="fab fa-github"></i> COVID-19 AES
+  </a>
+  <a href="https://github.com/deng-hanwen/HAS_UK_validation" class="btn btn-sm z-depth-0" role="button" style="background-color: #424242; color: white; margin-right: 6px;">
+    <i class="fab fa-github"></i> HAS-UK
+  </a>
+  <a href="https://github.com/deng-hanwen/Dclinpsy_diversity" class="btn btn-sm z-depth-0" role="button" style="background-color: #424242; color: white;">
+    <i class="fab fa-github"></i> DClinPsy
+  </a>
+</p>
 
-    ---
-    layout: page
-    title: project
-    description: a project with a background image
-    img: /assets/img/12.jpg
-    ---
+---
 
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/1.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/3.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    Caption photos easily. On the left, a road goes through a tunnel. Middle, leaves artistically fall in a hipster photoshoot. Right, in another hipster photoshoot, a lumberjack grasps a handful of pine needles.
-</div>
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    This image can also have a caption. It's like magic.
-</div>
+## Overview
 
-You can also put regular text between your rows of images.
-Say you wanted to write a little bit about your project before you posted the rest of the images.
-You describe how you toiled, sweated, _bled_ for your project, and then... you reveal its glory in the next row of images.
+These three projects sit outside my primary research programme in computational psychiatry and neuroimaging. They are applied quantitative collaborations — secondary analyses and clinical audits where the main contribution was statistical modelling in R. The methods across all three draw from the same toolkit: confirmatory factor analysis (CFA), structural equation modelling (SEM), logistic regression, and measurement invariance testing.
 
-<div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    You can also have artistically styled 2/3 + 1/3 images, like these.
+What links them most usefully, in retrospect, is that all three produced null or inconclusive results — and the reasons why are informative about study design in applied clinical research.
+
+---
+
+## Study 1 — Psychometric Validation of the Hyperglycaemia Avoidance Scale UK
+
+*Related publication: McKechnie et al. (2024), Diabetic Medicine.*
+
+Adults with Type 1 diabetes sometimes tolerate high blood glucose (hyperglycaemia) to avoid the immediate danger of low blood glucose (hypoglycaemia). The HAS-UK measures this tendency across three proposed factors: Worry, Blood Glucose Decisions, and Lifestyle Decisions. The goal was to validate this factor structure in a UK clinical sample (*N* = 230) and test whether it measured the same construct equally across subgroups (measurement invariance by HbA1c level, age, hypoglycaemia history, and awareness status).
+
+CFA was conducted using the WLSMV estimator in `lavaan` with ordered polytomous indicators. The three-factor model showed **poor fit** across all indices (CFI = 0.811, RMSEA = 0.115, SRMR = 0.131). Model estimation failed entirely for the high-HbA1c subgroup, precluding formal invariance testing.
+
+**Reflection.** Imposing a confirmatory model before establishing the factor structure empirically is a well-recognised pitfall. The correct sequence is EFA on a development sample first — to let the data reveal dimensionality — then CFA on a holdout sample to confirm it. The modification indices revealed extensive cross-loadings and correlated residuals: the scale structure itself requires revision, not just validation in a new sample. Additionally, measurement invariance testing presupposes adequate model fit within each group; the workflow here had the steps inverted.
+
+---
+
+## Study 2 — COVID-19 Lockdown, Autonomy Experience, and Psychological Wellbeing
+
+*Cross-national secondary analysis, N = 2,575 across 10 countries.*
+
+This project examined how individuals' perceptions of COVID-19 lockdown policies related to psychological distress across 10 countries. The Autonomy Experience Scale (AES) captured three dimensions: Perceived Coercion (PC), Perceived Pressure (PP), and Procedural Justice (PJ). Outcomes were depression, anxiety, and stress (DASS-21). A two-level SEM (individual within country) tested whether AES components predicted distress via maladaptive coping, and whether between-country differences in AES scores could be explained by demographic aggregates, GDP, or lockdown stringency.
+
+<div style="text-align: center; margin: 2rem 0;">
+  <img src="/assets/img/rob_sem_path.png" alt="Two-level SEM path diagram: AES constructs through maladaptive coping to DASS depression and anxiety" style="max-width: 78%; border: 1px solid #eee; padding: 8px;">
+  <p style="font-size: 0.85em; color: #666; margin-top: 0.5rem;"><em>Figure 1.</em> Two-level SEM. Within-country paths (Level 1): PP and PJ predicted maladaptive coping, which strongly predicted depression (β = .49) and anxiety (β = .45). Between-country paths (Level 2) were inconsistent in direction, and the dominant source of between-country variance in AES scores remained unexplained by GDP or lockdown stringency.</p>
 </div>
 
-The code is simple.
-Just wrap your images with `<div class="col-sm">` and place them inside `<div class="row">` (read more about the <a href="https://getbootstrap.com/docs/4.4/layout/grid/">Bootstrap Grid</a> system).
-To make images responsive, add `img-fluid` class to each; for rounded corners and shadows use `rounded` and `z-depth-1` classes.
-Here's the code for the last row of images above:
+Within-country paths replicated sensibly across the full sample and a UK subsample. The between-country model was more complex: Perceived Coercion was negatively associated with coping between countries — opposite to the within-country direction — and the dominant source of country-level variance in AES scores remained unexplained.
 
-{% raw %}
+**Reflection.** With only 10 countries, the Level 2 model was severely underpowered and underspecified from the outset. GDP and lockdown stringency capture little of what actually differs across countries in lockdown experience: government trust, prior experience of state authority, cultural norms around collective obligation, and specific policy communication were all unmeasured. A meaningful cross-national design would need to measure theoretically motivated country-level predictors directly, or restrict inference to within-country variation. The cross-level reversal in the PC coefficient is a textbook Simpson's paradox case — not a substantive finding, but a signal that the Level 2 model is missing key confounders.
 
-```html
-<div class="row justify-content-sm-center">
-  <div class="col-sm-8 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-  <div class="col-sm-4 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
+---
+
+## Study 3 — Demographic Equity Audit of DClinPsy Admissions
+
+*2023 intake cohort, N = 1,140 applicants. 6.9% overall acceptance rate.*
+
+The Doctorate in Clinical Psychology (DClinPsy) is the primary route to registration as a clinical psychologist in the UK. This project examined whether acceptance and rejection rates in the 2023 intake differed systematically across age, gender, ethnicity, disability, and sexual orientation, using logistic regression and Fisher's exact tests.
+
+<div style="text-align: center; margin: 2rem 0;">
+  <img src="/assets/img/rob_dclinpsy_eth.png" alt="Bar chart of DClinPsy acceptance rates by ethnic group, 2023 intake" style="max-width: 70%; border: 1px solid #eee; padding: 8px;">
+  <p style="font-size: 0.85em; color: #666; margin-top: 0.5rem;"><em>Figure 2.</em> Acceptance rates by ethnic group (2023 intake). No group differences reached significance (Fisher's exact, p = .320). The overall rate of 6.9% creates severe base-rate constraints on statistical power within subgroups.</p>
 </div>
-```
 
-{% endraw %}
+Acceptance rates were broadly similar across groups. The only statistically significant predictor in the logistic regression was applicants aged 45–49 (OR ≈ 7.2, *p* = .013). No ethnic, disability, or sexual orientation group differences were significant.
+
+**Reflection.** With a 7% overall acceptance rate, most demographic subgroups had too few acceptances to power any but very large effects. The null result here is not interpretable as evidence of equity — it is a power problem. The more appropriate design would be longitudinal: tracking acceptance patterns across multiple intake cohorts to detect drift, and pre-specifying the minimum detectable effect size at each subgroup's base rate before collecting data. A single cross-sectional snapshot of a small intake cohort cannot meaningfully address an equity question.
+
+---
+
+## What the Nulls Have in Common
+
+Across all three studies, the null and inconclusive results shared a common structure: a mismatch between the question asked and the design used to answer it. A scale imposed on CFA before its structure was established. A cross-national model with ten countries and no theoretically motivated Level 2 predictors. A power analysis never conducted for a rare-event outcome in small demographic cells.
+
+These are not failures of the phenomena — the underlying questions remain worth answering. They reflect constraints common in applied clinical research, where datasets are inherited rather than purpose-built and the pressure is to use available data rather than collect the right data. The practical lesson is that the statistical model should be scoped to what the data can actually support, not to what the research question ideally requires.
+
+---
+
+## Code
+
+All analysis code is available as private repositories on GitHub: [COVID-19 AES Wellbeing](https://github.com/deng-hanwen/COVID_AES_wellbeing) · [HAS-UK Validation](https://github.com/deng-hanwen/HAS_UK_validation) · [DClinPsy Diversity](https://github.com/deng-hanwen/Dclinpsy_diversity). Participant data are not included.
