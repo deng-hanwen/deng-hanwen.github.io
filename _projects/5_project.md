@@ -105,14 +105,6 @@ Acceptance rates were broadly similar across demographic groups. The only statis
 
 ---
 
-## What the Nulls Have in Common
-
-Across all three studies, the inconclusive results shared a common structure: methods that were appropriate in principle ran into constraints that limited what they could resolve. A construct whose boundaries were theoretically underspecified, making it difficult to validate against external criteria. A **multilevel SEM** with too few Level 2 units to model between-country structure adequately. A **logistic regression** applied to an outcome too rare to power meaningful subgroup comparisons.
-
-These reflect constraints common in applied clinical research, where datasets are inherited rather than purpose-built. The practical lesson is not that the methods were wrong, but that the inferential goals need to be scoped honestly to what the data can support.
-
----
-
 ## Code
 
 All analysis code is available as private repositories on GitHub: [COVID-19 AES Wellbeing](https://github.com/deng-hanwen/COVID_AES_wellbeing) · [HAS-UK Validation](https://github.com/deng-hanwen/HAS_UK_validation) · [DClinPsy Diversity](https://github.com/deng-hanwen/Dclinpsy_diversity). Participant data are not included.
