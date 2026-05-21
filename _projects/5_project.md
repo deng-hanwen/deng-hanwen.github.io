@@ -36,7 +36,14 @@ What links them most usefully, in retrospect, is that all three produced null or
 
 *Related publication: McKechnie et al. (2024), Diabetic Medicine.*
 
-Adults with Type 1 diabetes sometimes tolerate high blood glucose (hyperglycaemia) to avoid the immediate danger of low blood glucose (hypoglycaemia). The HAS-UK captures this tendency and was developed from a grounded theory model identifying emotional overcontrol, perfectionism, and compulsive glucose monitoring as core mechanisms. This project ran a full psychometric programme on a UK clinical sample (*N* = 230): **exploratory factor analysis (EFA)** to examine latent structure, **confirmatory factor analysis (CFA)** to test proposed models, **reliability analysis** (Cronbach's α and item-total correlations), and **convergent/divergent validity** testing against GAD-7, PHQ-9, PAID-5, and the Hypoglycaemia Fear Survey (HFS-II). Group comparisons and regression models examined associations with HbA1c, insulin modality, hypoglycaemia awareness, and severe hypoglycaemia history.
+This project was something of a detour — taken before I had established a clear computational research identity. What it gave me was a grounding in applied psychometric methods: I came away with a working command of **CFA**, **measurement invariance testing**, **SEM**, and the practical decisions that go into scale validation work, all of which have since informed how I think about latent variable measurement more broadly.
+
+Adults with Type 1 diabetes sometimes tolerate high blood glucose (hyperglycaemia) to avoid the immediate danger of low blood glucose (hypoglycaemia). The HAS-UK captures this tendency and was developed from a grounded theory model (McKechnie et al., 2023) identifying emotional overcontrol, perfectionism, and compulsive glucose monitoring as core mechanisms — structured around a feedback loop in which threat sensitivity, approach-focused coping, and diabetes technology interact to maintain hyperglycaemia aversion (see Figure 1 below). This project ran a full psychometric programme on a UK clinical sample (*N* = 230): **exploratory factor analysis (EFA)** to examine latent structure, **confirmatory factor analysis (CFA)** to test proposed models, **reliability analysis** (Cronbach's α and item-total correlations), and **convergent/divergent validity** testing against GAD-7, PHQ-9, PAID-5, and the Hypoglycaemia Fear Survey (HFS-II). Group comparisons and regression models examined associations with HbA1c, insulin modality, hypoglycaemia awareness, and severe hypoglycaemia history.
+
+<div style="text-align: center; margin: 2rem 0;">
+  <img src="/assets/img/has_theoretical_model.png" alt="Theoretical model of the process of hyperglycaemia aversion, McKechnie et al. 2023" style="max-width: 90%; border: 1px solid #eee; padding: 8px;">
+  <p style="font-size: 0.85em; color: #666; margin-top: 0.5rem;"><em>Figure 1.</em> Theoretical model of the process of hyperglycaemia aversion (McKechnie et al., 2023, <em>British Journal of Health Psychology</em>). Control and high standards interact with threat sensitivity, difficulties tolerating discomfort, and approach-focused coping to produce the hyperglycaemia aversion profile; diabetes technology plays a reinforcing role throughout.</p>
+</div>
 
 **CFA** using the **WLSMV estimator** in `lavaan` showed poor fit for the proposed factor structure (CFI = 0.811, RMSEA = 0.115, SRMR = 0.131). Model estimation failed entirely for the high-HbA1c subgroup, precluding formal **measurement invariance** testing.
 
@@ -54,7 +61,7 @@ Country membership was the strongest predictor of perceived coercion (OLS R² = 
 
 <div style="text-align: center; margin: 2rem 0;">
   <img src="/assets/img/rob_covid_pc.jpg" alt="Estimated marginal means of perceived coercion by country" style="max-width: 80%; border: 1px solid #eee; padding: 8px;">
-  <p style="font-size: 0.85em; color: #666; margin-top: 0.5rem;"><em>Figure 1.</em> Estimated marginal means (±SE) of Perceived Coercion by country (OLS, UK reference). Argentina and Italy showed the highest perceived coercion; Pakistan and Turkey the lowest. Country explained 27.6% of variance in PC — the strongest country-level effect across all six outcomes.</p>
+  <p style="font-size: 0.85em; color: #666; margin-top: 0.5rem;"><em>Figure 2.</em> Estimated marginal means (±SE) of Perceived Coercion by country (OLS, UK reference). Argentina and Italy showed the highest perceived coercion; Pakistan and Turkey the lowest. Country explained 27.6% of variance in PC — the strongest country-level effect across all six outcomes.</p>
 </div>
 
 **Reflection.** The within-country findings were coherent and consistent with the theoretical model. The between-country model was the more ambitious question, and the available country-level predictors — GDP and lockdown stringency index — captured little of what actually differed across countries in how lockdowns were experienced. Government trust, prior experience of state authority, and cultural norms around collective obligation were all unmeasured. With only 10 countries at Level 2, the **multilevel SEM** also had minimal degrees of freedom for testing country-level effects, making the null at that level difficult to interpret. The cross-level reversal in the PC path (negative between-country, positive within-country) signals a confounding structure at Level 2 that the model was not equipped to identify.
@@ -69,7 +76,7 @@ The Doctorate in Clinical Psychology (DClinPsy) is the primary route to registra
 
 <div style="text-align: center; margin: 2rem 0;">
   <img src="/assets/img/rob_dclinpsy_eth.png" alt="Bar chart of DClinPsy acceptance rates by ethnic group, 2023 intake" style="max-width: 70%; border: 1px solid #eee; padding: 8px;">
-  <p style="font-size: 0.85em; color: #666; margin-top: 0.5rem;"><em>Figure 2.</em> Acceptance rates by ethnic group (2023 intake). No group differences were statistically significant. The overall acceptance rate of 6.9% creates severe base-rate constraints on statistical power within subgroups.</p>
+  <p style="font-size: 0.85em; color: #666; margin-top: 0.5rem;"><em>Figure 3.</em> Acceptance rates by ethnic group (2023 intake). No group differences were statistically significant. The overall acceptance rate of 6.9% creates severe base-rate constraints on statistical power within subgroups.</p>
 </div>
 
 Acceptance rates were broadly similar across demographic groups. The only statistically significant predictor in the **logistic regression** was applicants aged 45–49 (OR ≈ 7.2, *p* = .013). No ethnic, disability, or sexual orientation group differences were significant.
