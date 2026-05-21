@@ -26,9 +26,9 @@ related_publications: false
 
 ## Overview
 
-These three projects sit outside my primary research programme in computational psychiatry and neuroimaging. They are applied quantitative collaborations — secondary analyses and clinical audits where the main contribution was statistical modelling in R. The methods across all three draw from the same toolkit: confirmatory factor analysis (CFA), structural equation modelling (SEM), logistic regression, and measurement invariance testing.
+These three projects sit outside my primary research programme in computational psychiatry and neuroimaging. They are applied quantitative collaborations — secondary analyses and clinical audits where the main contribution was statistical modelling in R. The methods across all three draw from the same toolkit: **confirmatory factor analysis (CFA)**, **structural equation modelling (SEM)**, **logistic regression**, and **measurement invariance testing**.
 
-What links them most usefully, in retrospect, is that all three produced null or inconclusive results — and the reasons why are informative about study design in applied clinical research.
+What links them most usefully, in retrospect, is that all three produced null or inconclusive results — and the reasons why are informative about the limits of the methods in applied clinical research settings.
 
 ---
 
@@ -36,11 +36,11 @@ What links them most usefully, in retrospect, is that all three produced null or
 
 *Related publication: McKechnie et al. (2024), Diabetic Medicine.*
 
-Adults with Type 1 diabetes sometimes tolerate high blood glucose (hyperglycaemia) to avoid the immediate danger of low blood glucose (hypoglycaemia). The HAS-UK measures this tendency across three proposed factors: Worry, Blood Glucose Decisions, and Lifestyle Decisions. The goal was to validate this factor structure in a UK clinical sample (*N* = 230) and test whether it measured the same construct equally across subgroups (measurement invariance by HbA1c level, age, hypoglycaemia history, and awareness status).
+Adults with Type 1 diabetes sometimes tolerate high blood glucose (hyperglycaemia) to avoid the immediate danger of low blood glucose (hypoglycaemia). The HAS-UK measures this tendency across three proposed factors: Worry, Blood Glucose Decisions, and Lifestyle Decisions. The goal was to validate this factor structure in a UK clinical sample (*N* = 230) and test whether it measured the same construct equally across clinical subgroups — **measurement invariance** by HbA1c level, age, hypoglycaemia history, and awareness status.
 
-CFA was conducted using the WLSMV estimator in `lavaan` with ordered polytomous indicators. The three-factor model showed **poor fit** across all indices (CFI = 0.811, RMSEA = 0.115, SRMR = 0.131). Model estimation failed entirely for the high-HbA1c subgroup, precluding formal invariance testing.
+**CFA** was conducted using the **WLSMV estimator** in `lavaan` with ordered polytomous indicators. The three-factor model showed **poor fit** across all indices (CFI = 0.811, RMSEA = 0.115, SRMR = 0.131). Model estimation failed entirely for the high-HbA1c subgroup, precluding formal invariance testing.
 
-**Reflection.** Imposing a confirmatory model before establishing the factor structure empirically is a well-recognised pitfall. The correct sequence is EFA on a development sample first — to let the data reveal dimensionality — then CFA on a holdout sample to confirm it. The modification indices revealed extensive cross-loadings and correlated residuals: the scale structure itself requires revision, not just validation in a new sample. Additionally, measurement invariance testing presupposes adequate model fit within each group; the workflow here had the steps inverted.
+**Reflection.** The poor fit did not reflect an error in the analysis pipeline — the CFA model faithfully implemented the factor structure established in the original scale development. Rather, it suggests the HAS-UK items may function differently in a UK clinical sample than in the population for which the scale was originally developed. The WLSMV estimator with ordered polytomous indicators also requires adequate cell frequencies across response categories; sparse responses on some items reduced the effective information available for estimation. Most consequentially, the non-convergence of the high-HbA1c subgroup model meant that the most clinically interesting comparison — whether the scale measures hyperglycaemia avoidance equivalently in well-controlled versus poorly-controlled diabetes — simply could not be answered with the available data. Measurement invariance testing presupposes a model that fits in each group individually, and that baseline condition was not met.
 
 ---
 
@@ -48,11 +48,16 @@ CFA was conducted using the WLSMV estimator in `lavaan` with ordered polytomous 
 
 *Cross-national secondary analysis, N = 2,575 across 10 countries.*
 
-This project examined how individuals' perceptions of COVID-19 lockdown policies related to psychological distress across 10 countries. The Autonomy Experience Scale (AES) captured three dimensions: Perceived Coercion (PC), Perceived Pressure (PP), and Procedural Justice (PJ). Outcomes were depression, anxiety, and stress (DASS-21). A two-level SEM (individual within country) tested whether AES components predicted distress via maladaptive coping, and whether between-country differences in AES scores could be explained by demographic aggregates, GDP, or lockdown stringency.
+This project examined how individuals' perceptions of COVID-19 lockdown policies related to psychological distress across 10 countries. The **Autonomy Experience Scale (AES)** captured three dimensions: Perceived Coercion (PC), Perceived Pressure (PP), and Procedural Justice (PJ). Outcomes were depression, anxiety, and stress (**DASS-21**). A **two-level SEM** (individual within country) tested whether AES components predicted distress via maladaptive coping, and whether between-country differences in AES scores could be explained by demographic aggregates, GDP, or lockdown stringency.
 
-Within-country paths replicated sensibly across the full sample and a UK subsample. The between-country model was more complex: Perceived Coercion was negatively associated with coping between countries — opposite to the within-country direction — and the dominant source of country-level variance in AES scores remained unexplained.
+Country membership was the strongest predictor of perceived coercion (OLS R² = .276), with substantial variation across the 10 countries. Within-country paths were consistent: PP and PJ predicted maladaptive coping, which in turn strongly predicted depression (β = .49) and anxiety (β = .45). Between-country variance in AES scores, however, remained largely unexplained by the available country-level predictors.
 
-**Reflection.** With only 10 countries, the Level 2 model was severely underpowered and underspecified from the outset. GDP and lockdown stringency capture little of what actually differs across countries in lockdown experience: government trust, prior experience of state authority, cultural norms around collective obligation, and specific policy communication were all unmeasured. A meaningful cross-national design would need to measure theoretically motivated country-level predictors directly, or restrict inference to within-country variation. The cross-level reversal in the PC coefficient is a textbook Simpson's paradox case — not a substantive finding, but a signal that the Level 2 model is missing key confounders.
+<div style="text-align: center; margin: 2rem 0;">
+  <img src="/assets/img/rob_covid_pc.jpg" alt="Estimated marginal means of perceived coercion by country" style="max-width: 80%; border: 1px solid #eee; padding: 8px;">
+  <p style="font-size: 0.85em; color: #666; margin-top: 0.5rem;"><em>Figure 1.</em> Estimated marginal means (±SE) of Perceived Coercion by country (OLS, UK reference). Argentina and Italy showed the highest perceived coercion; Pakistan and Turkey the lowest. Country explained 27.6% of variance in PC — the strongest country-level effect across all six outcomes.</p>
+</div>
+
+**Reflection.** The within-country findings were coherent and consistent with the theoretical model. The between-country model was the more ambitious question, and the available country-level predictors — GDP and lockdown stringency index — captured little of what actually differed across countries in how lockdowns were experienced. Government trust, prior experience of state authority, and cultural norms around collective obligation were all unmeasured. With only 10 countries at Level 2, the **multilevel SEM** also had minimal degrees of freedom for testing country-level effects, making the null at that level difficult to interpret. The cross-level reversal in the PC path (negative between-country, positive within-country) signals a confounding structure at Level 2 that the model was not equipped to identify.
 
 ---
 
@@ -60,24 +65,24 @@ Within-country paths replicated sensibly across the full sample and a UK subsamp
 
 *2023 intake cohort, N = 1,140 applicants. 6.9% overall acceptance rate.*
 
-The Doctorate in Clinical Psychology (DClinPsy) is the primary route to registration as a clinical psychologist in the UK. This project examined whether acceptance and rejection rates in the 2023 intake differed systematically across age, gender, ethnicity, disability, and sexual orientation, using logistic regression and Fisher's exact tests.
+The Doctorate in Clinical Psychology (DClinPsy) is the primary route to registration as a clinical psychologist in the UK. This project examined whether acceptance and rejection rates in the 2023 intake differed systematically across age, gender, ethnicity, disability, and sexual orientation, using **logistic regression** and **Fisher's exact tests**.
 
 <div style="text-align: center; margin: 2rem 0;">
   <img src="/assets/img/rob_dclinpsy_eth.png" alt="Bar chart of DClinPsy acceptance rates by ethnic group, 2023 intake" style="max-width: 70%; border: 1px solid #eee; padding: 8px;">
-  <p style="font-size: 0.85em; color: #666; margin-top: 0.5rem;"><em>Figure 1.</em> Acceptance rates by ethnic group (2023 intake). No group differences reached significance (Fisher's exact, p = .320). The overall rate of 6.9% creates severe base-rate constraints on statistical power within subgroups.</p>
+  <p style="font-size: 0.85em; color: #666; margin-top: 0.5rem;"><em>Figure 2.</em> Acceptance rates by ethnic group (2023 intake). No group differences were statistically significant. The overall acceptance rate of 6.9% creates severe base-rate constraints on statistical power within subgroups.</p>
 </div>
 
-Acceptance rates were broadly similar across groups. The only statistically significant predictor in the logistic regression was applicants aged 45–49 (OR ≈ 7.2, *p* = .013). No ethnic, disability, or sexual orientation group differences were significant.
+Acceptance rates were broadly similar across demographic groups. The only statistically significant predictor in the **logistic regression** was applicants aged 45–49 (OR ≈ 7.2, *p* = .013). No ethnic, disability, or sexual orientation group differences were significant.
 
-**Reflection.** With a 7% overall acceptance rate, most demographic subgroups had too few acceptances to power any but very large effects. The null result here is not interpretable as evidence of equity — it is a power problem. The more appropriate design would be longitudinal: tracking acceptance patterns across multiple intake cohorts to detect drift, and pre-specifying the minimum detectable effect size at each subgroup's base rate before collecting data. A single cross-sectional snapshot of a small intake cohort cannot meaningfully address an equity question.
+**Reflection.** With a 7% overall acceptance rate, most demographic subgroups had too few acceptances to detect anything but very large effects — the study was structurally underpowered for its question. The null result is therefore not interpretable as evidence of equity. A more informative design would track acceptance patterns longitudinally across multiple intake cohorts to detect drift, and pre-specify the minimum detectable effect size at each subgroup's base rate before data collection. A single cross-sectional snapshot of a small intake cohort cannot meaningfully address a fairness question.
 
 ---
 
 ## What the Nulls Have in Common
 
-Across all three studies, the null and inconclusive results shared a common structure: a mismatch between the question asked and the design used to answer it. A scale imposed on CFA before its structure was established. A cross-national model with ten countries and no theoretically motivated Level 2 predictors. A power analysis never conducted for a rare-event outcome in small demographic cells.
+Across all three studies, the inconclusive results shared a common structure: methods that were appropriate in principle ran into data constraints that limited what they could resolve. A **CFA** that could not converge in the most clinically important subgroup. A **multilevel SEM** with too few Level 2 units to model between-country structure adequately. A **logistic regression** applied to an outcome too rare to power meaningful subgroup comparisons.
 
-These are not failures of the phenomena — the underlying questions remain worth answering. They reflect constraints common in applied clinical research, where datasets are inherited rather than purpose-built and the pressure is to use available data rather than collect the right data. The practical lesson is that the statistical model should be scoped to what the data can actually support, not to what the research question ideally requires.
+These reflect constraints common in applied clinical research, where datasets are inherited rather than purpose-built. The practical lesson is not that the methods were wrong, but that the inferential goals need to be scoped honestly to what the data can support.
 
 ---
 
