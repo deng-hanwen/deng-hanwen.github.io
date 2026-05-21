@@ -17,7 +17,7 @@ related_publications: false
 
 *Yale University. Dr Sarah Yip.*
 
-> **Note:** This project is ongoing. Results presented here reflect analyses completed to date.
+> **Note:** This project is ongoing and currently in preparation. Specific results are not reported here.
 
 ---
 
@@ -60,58 +60,20 @@ Participants were classified as **responders** (no opioid-positive urine screens
 
 ---
 
-## Key Findings
+## Research Direction
 
-### OUD–HC differences are large-scale and robust across tasks
+This project is examining two separable questions about functional connectivity (FC) in OUD: whether OUD–HC differences are consistent across task and resting-state contexts, and whether the networks that best distinguish patients from controls are the same as those that predict treatment response. These questions are conceptually distinct — a robust diagnostic signature and a clinically dynamic signature need not involve the same circuitry — and bear directly on how neuroimaging biomarkers in addiction should be interpreted and validated.
 
-Both per-task analyses (MID and Stroop) identified large-scale OUD–HC differences in both directions — OUD > HC and HC > OUD — constituting single connected components spanning the majority of the connectome. Averaging matrices across tasks yielded the most sensitive result. The Dx × Task interaction was non-significant, confirming that OUD-associated connectivity alterations do not depend on task context. A conjunction analysis — retaining only edges surviving NBS independently in **both** tasks — produced a conservative, replication-validated subset that overlapped substantially with the averaged network.
-
-### Network anatomy
-
-The **OUD > HC** network is dominated by subcortical-cortical hyperconnectivity, centred on a right subcortical hub node with dense connections spanning frontoparietal–motor (FP↔Mot), frontoparietal–subcortical (FP↔SC), and subcortical–visual association (SC↔VAs) circuits.
-
-The **HC > OUD** network is characterised by motor and cerebellar connectivity, with the top hub in the left cerebellum and leading connections within-motor (Mot↔Mot), cerebellar–motor (CBL↔Mot), and motor–subcortical (Mot↔SC).
-
-### FC differences are state-general
-
-The OUD–HC group difference at MID-identified edges is fully preserved during the Stroop task and vice versa, and the directional pattern extends into resting-state. This holds across all four edge sets.
+The analytic framework draws on prior work by Lichenstein et al. (2021), who applied connectome-based predictive modelling to the same dataset and identified a network predictive of opioid abstinence during treatment. That treatment-predictive network — characterised by within-network motor/sensory connectivity and connections spanning salience, default mode, and frontoparietal systems — provides an important reference point for interpreting any new NBS-derived diagnostic signatures.
 
 <div style="text-align: center; margin: 2rem 0;">
-  <img src="/assets/img/nbs_brainstate.png" alt="Bar plots showing mean FC at per-task NBS edges across MID, Stroop, and resting-state for OUD and HC" style="max-width: 95%; border: 1px solid #eee; padding: 8px;">
-  <p style="font-size: 0.85em; color: #666; margin-top: 0.5rem;"><em>Figure 1.</em> Mean FC (Fisher-z, ± SE) at per-task NBS edges across brain states. Each panel shows OUD (salmon) and HC (blue) at edges identified by MID or Stroop NBS, evaluated during MID task, Stroop task, and OUD resting-state. The group difference is preserved across all brain states. HC resting-state data unavailable (n/a); OUD rest n = 36.</p>
+  <a href="https://doi.org/10.1038/s41380-019-0586-y" target="_blank" rel="noopener">
+    <img src="/assets/img/nbs_lich_fig3c.png" alt="Lichenstein 2021 Figure 3C: opioid abstinence network strength by treatment group" style="max-width: 55%; border: 1px solid #eee; padding: 6px;">
+  </a>
+  <p style="font-size: 0.85em; color: #666; margin-top: 0.5rem;"><em>Figure 1.</em> Opioid abstinence network strength by treatment group (Lichenstein et al., 2021; click to open paper). Network strength is highest in responders and lowest in non-responders, demonstrating that FC can track treatment outcome in this dataset. A key question in the present project is whether NBS-derived diagnostic networks show a comparable or dissociable pattern.</p>
 </div>
 
-### Diagnostic networks do not predict treatment response
-
-Despite their robustness, these diagnostic networks showed **no significant association with treatment response**. Strikingly, the direction was *opposite* to what a normalisation hypothesis would predict: responders sat *further* from healthy controls than non-responders at every edge set. Both OUD subgroups remained far from healthy connectivity levels.
-
----
-
-## Discussion
-
-The findings point to a **dissociation between two distinct neural signatures** of OUD: a large-scale, state-general diagnostic signature that separates patients from controls across task and rest contexts, and a clinically dynamic signature that tracks treatment outcome — which is not the diagnostic network.
-
-Lichenstein et al. (2021) applied CPM to the same dataset and identified a network predictive of opioid abstinence during treatment (*r* = 0.32, *p* = 0.018 from Stroop data). That opioid abstinence network is characterised predominantly by within-network motor/sensory connectivity and by connections between motor/sensory, salience, default mode, and frontoparietal networks — anatomically distinct from the subcortical-cortical hyperconnectivity that dominates the diagnostic NBS results here.
-
-The figures below capture both sides of this dissociation: the left shows that network strength on the **treatment-predictive network** cleanly separates responders from controls from non-responders; the right shows that on the **diagnostic network**, both OUD subgroups sit far above healthy controls, with no meaningful separation between responders and non-responders.
-
-<div style="text-align: center; margin: 2rem 0;">
-  <div style="display: inline-flex; gap: 2rem; justify-content: center; align-items: flex-start; flex-wrap: wrap;">
-    <div style="max-width: 340px;">
-      <a href="https://doi.org/10.1038/s41380-019-0586-y" target="_blank" rel="noopener">
-        <img src="/assets/img/nbs_lich_fig3c.png" alt="Lichenstein 2021 Figure 3C: opioid abstinence network strength by treatment group" style="width: 100%; border: 1px solid #eee; padding: 6px;">
-      </a>
-      <p style="font-size: 0.82em; color: #666; margin-top: 0.4rem; text-align: left;"><strong>Treatment-predictive network</strong> (Lichenstein et al., 2021; click to open paper). Opioid abstinence network strength (y-axis) is highest in responders, intermediate in healthy controls, and lowest in non-responders. The network tracks recovery.</p>
-    </div>
-    <div style="max-width: 500px;">
-      <img src="/assets/img/nbs_analysis12.png" alt="Analysis 12: diagnostic NBS network strength by treatment group, showing no separation" style="width: 100%; border: 1px solid #eee; padding: 6px;">
-      <p style="font-size: 0.82em; color: #666; margin-top: 0.4rem; text-align: left;"><strong>Diagnostic network</strong> (this study). Mean FC at OUD–HC conjunction edges does not differentiate responders from non-responders (all *p* > .19). Both OUD groups remain far from healthy control levels — the diagnostic signature is fixed, not clinically dynamic.</p>
-    </div>
-  </div>
-  <p style="font-size: 0.82em; color: #666; margin-top: 0.8rem;"><em>Figure 2.</em> Dissociation between treatment-predictive and diagnostic FC networks. Left panel reproduced from Lichenstein et al. (2021).</p>
-</div>
-
-This distinction matters for biomarker research in addiction. Stable diagnostic FC markers may index fixed neurobiological consequences of chronic opioid exposure and are relevant for understanding disorder mechanisms — but they should not be assumed to be appropriate targets for tracking clinical change. Kurtin et al. (2026) report a parallel finding in an independent UK methadone sample, where OUD–HC connectivity differences showed a consistent pattern across cognitive and reward task contexts, supporting a trait-level rather than state-specific interpretation.
+Kurtin et al. (2026) report a parallel finding in an independent UK methadone sample, where OUD–HC connectivity differences showed a consistent pattern across cognitive and reward task contexts — supporting a trait-level interpretation of such diagnostic signatures. The present analyses are designed to test whether that pattern holds in this dataset and whether it extends to resting-state, and to examine its relationship with clinical outcome.
 
 ---
 
