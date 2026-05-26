@@ -5,17 +5,10 @@ description: MRes dissertation — utility-based computational modelling of a ri
 img: assets/img/oud_thumb.png
 importance: 2
 category: Computational and Neuroimaging
-github: https://github.com/deng-hanwen/OUD_ambiguity_tolerance
 related_publications: false
 ---
 
-<p>
-  <a href="https://github.com/deng-hanwen/OUD_ambiguity_tolerance" class="btn btn-sm z-depth-0" role="button" style="background-color: #424242; color: white;">
-    <i class="fab fa-github"></i> View Code on GitHub
-  </a>
-</p>
-
-*UCL / Yale University / Anna Freud Center. Supervised by Dr Sarah Yip & Dr Stephen Riley.*
+*UCL / Yale University / Anna Freud Center. Supervised by Dr Sarah Yip & Dr Stephen Riley. Collaborators: Anna Konova & Francesca M. LoFaro.*
 
 > **Note:** MRes Dissertation — Distinction.
 
@@ -124,7 +117,7 @@ An emerging direction moves beyond single-parameter biomarker logic toward **com
 
 ## Code & Reproducibility
 
-All analysis code is available at **[github.com/deng-hanwen/OUD_ambiguity_tolerance](https://github.com/deng-hanwen/OUD_ambiguity_tolerance)**, including R Markdown scripts for model fitting QC, logistic regression, propensity score weighting, mediation analysis, and visualisation. Raw data are not shared to protect participant confidentiality.
+Analysis code for this project was developed collaboratively and the project is ongoing. Code is not publicly available at this stage. Raw data are not shared to protect participant confidentiality.
 
 ---
 

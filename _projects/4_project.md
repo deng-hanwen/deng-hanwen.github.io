@@ -5,15 +5,8 @@ description: Connectome-based predictive modelling of resting-state functional c
 img: assets/img/cpm_thumb.png
 importance: 3
 category: Computational and Neuroimaging
-github: https://github.com/deng-hanwen/RiskBehavior_controlCPM
 related_publications: false
 ---
-
-<p>
-  <a href="https://github.com/deng-hanwen/RiskBehavior_controlCPM" class="btn btn-sm z-depth-0" role="button" style="background-color: #424242; color: white;">
-    <i class="fab fa-github"></i> View Code on GitHub
-  </a>
-</p>
 
 *Hanwen Deng, Francesca M. LoFaro, Steven Riley, Sarah W. Yip, Anna B. Konova*
 
@@ -95,7 +88,7 @@ CPM was applied to resting-state fMRI connectivity matrices derived from the **2
 
 ## Code & Reproducibility
 
-All analysis code is available at **[github.com/deng-hanwen/RiskBehavior_controlCPM](https://github.com/deng-hanwen/RiskBehavior_controlCPM)**, including MATLAB scripts for behavioural preprocessing, utility model fitting, and the CPM pipeline. Raw data are not shared to protect participant confidentiality.
+Analysis code for this project was developed collaboratively and the project is ongoing. Code is not publicly available at this stage. Raw data are not shared to protect participant confidentiality.
 
 ---
 

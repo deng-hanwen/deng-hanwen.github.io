@@ -5,15 +5,8 @@ description: Continuous-time dynamical systems modelling of ecological momentary
 img: assets/img/proj_ema.png
 importance: 1
 category: EMA
-github: https://github.com/deng-hanwen/EMA-mood-dynamics
 related_publications: false
 ---
-
-<p>
-  <a href="https://github.com/deng-hanwen/EMA-mood-dynamics" class="btn btn-sm z-depth-0" role="button" style="background-color: #424242; color: white;">
-    <i class="fab fa-github"></i> View Code on GitHub
-  </a>
-</p>
 
 > **Note:** This project is currently being prepared for publication. Full methods and results will be made available upon submission.
 
@@ -91,7 +84,7 @@ Manic symptom worsening was associated with changes in DLO parameters across bot
 
 ## Code & Reproducibility
 
-All analysis code is available at **[github.com/deng-hanwen/EMA-mood-dynamics](https://github.com/deng-hanwen/EMA-mood-dynamics)**, including R Markdown scripts for data QC, PCA, DLO model fitting and filtering, stepwise regression, LME modelling, and visualisation. Raw data are not shared to protect participant confidentiality.
+Analysis code for this project was developed collaboratively and the project is ongoing. Code is not publicly available at this stage. Raw data are not shared to protect participant confidentiality.
 
 *Manuscript in preparation. Co-authored with Dr Liam Mason (UCL).*
 

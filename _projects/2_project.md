@@ -5,15 +5,8 @@ description: Whole-brain Network-Based Statistics across reward and cognitive co
 img: assets/img/nbs_thumb.png
 importance: 4
 category: Computational and Neuroimaging
-github: https://github.com/deng-hanwen/BrainStateDx-NBS
 related_publications: false
 ---
-
-<p>
-  <a href="https://github.com/deng-hanwen/BrainStateDx-NBS" class="btn btn-sm z-depth-0" role="button" style="background-color: #424242; color: white;">
-    <i class="fab fa-github"></i> View Code on GitHub
-  </a>
-</p>
 
 *Yale University. PI: Dr Sarah Yip. Dataset and foundational CPM analyses: Dr Sarah Lichenstein.*
 
@@ -79,7 +72,7 @@ Kurtin et al. (2026) report a parallel finding in an independent UK methadone sa
 
 ## Code & Reproducibility
 
-Analysis code is available at **[github.com/deng-hanwen/BrainStateDx-NBS](https://github.com/deng-hanwen/BrainStateDx-NBS)**, including MATLAB scripts for NBS analysis, conjunction and averaged-matrix analyses, brain state comparison, and treatment response testing. Raw fMRI data are not shared due to participant confidentiality.
+Analysis code for this project was developed collaboratively and the project is ongoing. Code is not publicly available at this stage. Raw fMRI data are not shared due to participant confidentiality.
 
 ---
 
