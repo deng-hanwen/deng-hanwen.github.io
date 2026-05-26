@@ -407,11 +407,6 @@ ninja.data = [{
           description: "Continuous-time dynamical systems modelling of ecological momentary assessment data to characterise affect lability and dampening in bipolar disorder",
           section: "Projects",handler: () => {
               window.location.href = "/projects/1_project/";
-            },},{id: "projects-neurobiological-markers-of-opioid-use-disorder",
-          title: 'Neurobiological Markers of Opioid Use Disorder',
-          description: "Whole-brain Network-Based Statistics across reward and cognitive control fMRI tasks — probing the task-generality and clinical specificity of OUD functional connectivity",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/2_project/";
             },},{id: "projects-computational-markers-and-clinical-vulnerability-in-early-oud-treatment",
           title: 'Computational Markers and Clinical Vulnerability in Early OUD Treatment',
           description: "MRes dissertation — utility-based computational modelling of a risk and ambiguity decision-making task in methadone treatment, with propensity score correction for non-random missingness",
