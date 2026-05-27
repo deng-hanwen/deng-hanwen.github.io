@@ -55,39 +55,6 @@ The effects of varying η and ζ on affect trajectories are illustrated in Figur
   <p style="font-size: 0.85em; color: #666; margin-top: 0.5rem;"><em>Figures 2–3.</em> Simulated affect trajectories illustrating the effect of varying η (emotional lability, left) and ζ (resilience, right). Reproduced from Ollero et al. (2025, <em>Psychological Methods</em>).</p>
 </div>
 
-The DLO was fitted as a **continuous-time state-space model** using **OpenMx** in R. This specification accommodates the irregular inter-observation intervals inherent in naturalistic EMA data and yields parameters directly comparable across datasets with different sampling rates. Individual solutions were accepted under a **stability criterion** requiring both system eigenvalues to have strictly negative real parts (Re(λ) < 0). Raw estimates were Winsorised at the 5th–95th percentile bounds (derived from stable participants) and transformed via inverse hyperbolic sine (asinh) to reduce skew while preserving sign.
-
-Associations between DLO parameters and prospective manic and depressive symptom change (ΔAltman, ΔQIDS) were tested using **stepwise OLS regression** in the BD subsample, with Bonferroni correction applied across outcomes.
-
----
-
-## Control Analysis: Linear Mixed-Effects (LME) Modelling
-
-An **LME model** fitted to moment-to-moment affect velocity served as a control analysis, testing whether the associations between symptom change and affect dynamics were detectable without the DLO framework. Within the LME, restoring force and momentum are operationalised as discrete-lag regression coefficients on lagged position ($x_{t-1}$) and lagged velocity ($\dot{x}_{t-1}$):
-
-$$\dot{x}_{ti} = \underbrace{\beta_1 x_{(t-1)i}}_{\text{restoring force}} + \underbrace{\beta_2 \dot{x}_{(t-1)i}}_{\text{momentum}} + \cdots$$
-
-The comparison is deliberate: DLO estimates these as continuous-time system parameters from the full trajectory, whereas LME treats them as discrete-lag coefficients — a coarser approximation that does not recover the oscillatory structure of the underlying process.
-
----
-
-## Key Findings
-
-Manic symptom worsening was associated with changes in DLO parameters across both affect streams, with signatures specific to mania rather than depression. In positive affect, worsening mania was linked to **increased lability** (η) — faster, more pronounced PA oscillations. In negative affect, it was linked to **reduced resilience** (ζ) — a slower, more persistent return of NA to baseline following displacement. Neither pattern was detectable using the LME control analysis, underscoring the necessity of the DLO framework for capturing relapse-relevant mood dynamics.
-
-<div style="text-align: center; margin: 2rem 0;">
-  <img src="/assets/img/ema_conceptual_results.png" alt="Conceptual DLO trajectories illustrating key findings" style="max-width: 98%; border: 1px solid #eee; padding: 8px;">
-  <p style="font-size: 0.85em; color: #666; margin-top: 0.5rem;"><em>Conceptual illustration.</em> DLO simulations showing the direction of observed associations with manic symptom worsening. Panel A: increased PA lability (η) — faster oscillations under high manic symptoms. Panel B: reduced NA resilience (ζ) — slower return to equilibrium. No individual participant data are shown.</p>
-</div>
-
----
-
-## Code & Reproducibility
-
-Analysis code for this project was developed collaboratively and the project is ongoing. Code is not publicly available at this stage. Raw data are not shared to protect participant confidentiality.
-
-*Manuscript in preparation. Co-authored with Dr Liam Mason (UCL).*
-
 ---
 
 ## References

@@ -3,9 +3,9 @@ layout: page
 title: Research
 permalink: /projects/
 description: Computational psychiatry, neuroimaging, and EMA research projects.
-nav: false
+nav: true
 nav_order: 3
-display_categories: [Computational and Neuroimaging, EMA, Psychometric and Clinical Audit]
+display_categories: [EMA, Psychometric and Clinical Audit]
 horizontal: false
 ---
 
