@@ -9,14 +9,7 @@ ninja.data = [{
     handler: () => {
       window.location.href = "/";
     },
-  },{id: "nav-research",
-          title: "Research",
-          description: "Computational psychiatry, neuroimaging, and EMA research projects.",
-          section: "Navigation",
-          handler: () => {
-            window.location.href = "/projects/";
-          },
-        },{id: "nav-cv",
+  },{id: "nav-cv",
           title: "CV",
           description: "Curriculum Vitae of Hanwen Deng — Postgraduate Associate at Yale University Department of Psychiatry.",
           section: "Navigation",
